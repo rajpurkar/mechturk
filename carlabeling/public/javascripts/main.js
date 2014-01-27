@@ -75,6 +75,7 @@ if(preview==false){
 	$('#bt').click(function(e) {
 			console.log(markCollection.jsonify());
 			$('#marks').val(markCollection.jsonify());
-			return false;
+			$('#mturk_form').submit();
+			return true;
 			});
 }
