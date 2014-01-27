@@ -64,11 +64,9 @@ var MarkingCollection = function(image) {
 
     this.jsonify = function() {
         return JSON.stringify({
-            image : image.src,
             width : image.width,
             height : image.height,
             markings : markings,
-            type : "lane"
         });
     }
 }
@@ -103,6 +101,14 @@ var Marking = function() {
     this.removeMarking = function() {
         points = [];
         started = false;
+    }
+
+    this.jsonify = function() {
+        return JSON.stringify({
+            width : image.width,
+            height : image.height,
+            markings : points,
+        });
     }
 }
 

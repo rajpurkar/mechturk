@@ -6,13 +6,8 @@ image.onload = function() {
     markCollection = new MarkingCollection(image);
 }
 
-var myBuffer = new imageBuffer();
-myBuffer.addImage("images/237E_split_9_237E_a2_00901.jpeg");
-myBuffer.addImage("images/580E_split_0_580E_c1_00251.jpeg");
-myBuffer.addImage("images/580E_split_0_580E_c1_00501.jpeg");
-myBuffer.addImage("images/580E_split_3_580E_a1_00701.jpeg");
-
-image.src = myBuffer.getNextImage();
+console.log(gup('url'));
+image.src = decode(gup('url'));
 var canvas = document.getElementById('myCanvas');
 var context = canvas.getContext('2d');
 
@@ -57,26 +52,7 @@ $('#myCanvas').click(function(e) {
 });
 
 $('#bt').click(function(e) {
-    if (markCollection.isSet()) {
-        addMarkToCollection();
-        console.log(markCollection.jsonify());
-        markCollection.removeMarkingCollection();
-        if (myBuffer.hasMore()) {
-            image.src = myBuffer.getNextImage();
-            var dim = resizeImage(image);
-            //$("#myCanvas").fadeOut(500, function() {
-            context.drawImage(image, 0, 0, dim.width, dim.height);
-            //    $("#myCanvas").fadeIn(500);
-            //});
-            $("#message").text("Next Image has loaded. Please start marking the cars.");
-
-        } else {
-            $("#message").text("Now move your mouse over the lane marking. Click once completed.");
-            $("#bt").fadeOut("slow");
-            $("#message").text("Your responses have been recorded. Thank you.");
-            $("#myCanvas").fadeOut("slow");
-            markCollection.kill();
-        }
-    }
+    console.log(markCollection.jsonify());
+    $('#marks').val(markCollection.jsonify());
     return false;
 });

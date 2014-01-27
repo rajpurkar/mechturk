@@ -334,3 +334,111 @@ Results have been written to file '../samples/best_image/best_image.results'.
 [2014-01-26 15:21:22] INFO  (DeleteHITs.java: 74) - --- Finished to delete HITs ---
 [2014-01-26 15:21:22] INFO  (DeleteHITs.java: 75) -   1 HITs have been deleted or were deleted previously.
 [2014-01-26 15:21:22] INFO  (DeleteHITs.java: 76) -   0 errors occured.
+[2014-01-26 16:55:28] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2014-01-26 16:55:28] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2014-01-26 16:55:28] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2014-01-26 16:55:28] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2014-01-26 16:55:28] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2014-01-26 16:55:29] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2014-01-26 16:55:29] INFO  (LoadHITs.java: 231) -   Start time: Sun Jan 26 16:55:29 PST 2014
+[2014-01-26 16:55:29] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2014-01-26 16:55:29] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=2359U8P9Y38WPGYYXTLYLM0J6QUXGE
+[2014-01-26 16:55:29] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=2KGOCCF0CP5NQ9UYHJ9X1G4PZN1UV8
+[2014-01-26 16:55:30] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=2M998D8J3VEAPCT9HZ3G6MCKLQ7XHD
+[2014-01-26 16:55:30] INFO  (RequesterService.java: 1548) - Created HIT 4: HITId=2Q9NDWIOV1SAL74TNHL16YDZL3MXI6
+[2014-01-26 16:55:30] INFO  (RequesterService.java: 1548) - Created HIT 5: HITId=24M6UXFCD4505YU37TETNIN36W3UWI
+[2014-01-26 16:55:30] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '2CHX7H57DZKS8Y5UAE8DP25L86XB17' here: 
+[2014-01-26 16:55:30] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=2CHX7H57DZKS8Y5UAE8DP25L86XB17
+
+[2014-01-26 16:55:30] INFO  (LoadHITs.java: 239) -   End time: Sun Jan 26 16:55:30 PST 2014
+[2014-01-26 16:55:30] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2014-01-26 16:55:30] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2014-01-26 16:55:30] INFO  (LoadHITs.java: 243) -   Successfully loaded 5 HITs.
+[2014-01-26 16:56:29] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2014-01-26 16:56:29] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2014-01-26 16:56:29] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2014-01-26 16:56:29] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2014-01-26 16:56:29] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2014-01-26 16:56:30] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2014-01-26 16:56:30] INFO  (LoadHITs.java: 231) -   Start time: Sun Jan 26 16:56:30 PST 2014
+[2014-01-26 16:56:30] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2014-01-26 16:56:31] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=2A4OFXRDS4IFUYZTHYAFP11AFY9UXB
+[2014-01-26 16:56:31] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=24SB6BFMFFO1R2UHNK6DJESCD7BXKH
+[2014-01-26 16:56:31] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=29BLB3L0FBJCB8CZ8KIEYE5R27GXLK
+[2014-01-26 16:56:31] INFO  (RequesterService.java: 1548) - Created HIT 4: HITId=2OKJENLVWJ5RIV1EPHQ81MWBKU3S0Y
+[2014-01-26 16:56:31] INFO  (RequesterService.java: 1548) - Created HIT 5: HITId=2N633FDEY5CRPKMWL0U8FRFLPM9S11
+[2014-01-26 16:56:31] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '2CHX7H57DZKS8Y5UAE8DP25L86XB17' here: 
+[2014-01-26 16:56:31] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=2CHX7H57DZKS8Y5UAE8DP25L86XB17
+
+[2014-01-26 16:56:31] INFO  (LoadHITs.java: 239) -   End time: Sun Jan 26 16:56:31 PST 2014
+[2014-01-26 16:56:31] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2014-01-26 16:56:31] INFO  (LoadHITs.java: 241) -   Total load time: 1 seconds.
+[2014-01-26 16:56:31] INFO  (LoadHITs.java: 243) -   Successfully loaded 5 HITs.
+[2014-01-26 16:57:07] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2014-01-26 16:57:07] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2014-01-26 16:57:07] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2014-01-26 16:57:07] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2014-01-26 16:57:07] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2014-01-26 16:57:09] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2014-01-26 16:57:09] INFO  (LoadHITs.java: 231) -   Start time: Sun Jan 26 16:57:09 PST 2014
+[2014-01-26 16:57:09] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2014-01-26 16:57:09] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=2SLQ39Z0B6UWHQUK8WJTYRKG2C6XMM
+[2014-01-26 16:57:09] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=25C3K4F0OHOYKL5YRLF2O92HRSB219
+[2014-01-26 16:57:09] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=2FJTHV8ER9YBM7LYG0JM8KFH5I2Q32
+[2014-01-26 16:57:09] INFO  (RequesterService.java: 1548) - Created HIT 4: HITId=2RWSCWY2AOO596NUAPFGTSCMJYP22Q
+[2014-01-26 16:57:09] INFO  (RequesterService.java: 1548) - Created HIT 5: HITId=29QSV7WGKCCYE54S44UMKAPQHSNS2I
+[2014-01-26 16:57:09] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '2CHX7H57DZKS8Y5UAE8DP25L86XB17' here: 
+[2014-01-26 16:57:09] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=2CHX7H57DZKS8Y5UAE8DP25L86XB17
+
+[2014-01-26 16:57:09] INFO  (LoadHITs.java: 239) -   End time: Sun Jan 26 16:57:09 PST 2014
+[2014-01-26 16:57:09] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2014-01-26 16:57:09] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2014-01-26 16:57:09] INFO  (LoadHITs.java: 243) -   Successfully loaded 5 HITs.
+[2014-01-26 17:02:18] INFO  (GetResults.java: 119) - --[Retrieving Results]----------
+[2014-01-26 17:02:18] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2014-01-26 17:02:20] INFO  (GetResults.java: 162) - Retrieved HIT 1/5, 2SLQ39Z0B6UWHQUK8WJTYRKG2C6XMM
+[2014-01-26 17:02:20] INFO  (GetResults.java: 162) - Retrieved HIT 2/5, 25C3K4F0OHOYKL5YRLF2O92HRSB219
+[2014-01-26 17:02:21] INFO  (GetResults.java: 162) - Retrieved HIT 3/5, 2FJTHV8ER9YBM7LYG0JM8KFH5I2Q32
+[2014-01-26 17:02:21] INFO  (GetResults.java: 162) - Retrieved HIT 4/5, 2RWSCWY2AOO596NUAPFGTSCMJYP22Q
+[2014-01-26 17:02:21] INFO  (GetResults.java: 162) - Retrieved HIT 5/5, 29QSV7WGKCCYE54S44UMKAPQHSNS2I
+[2014-01-26 17:02:21] INFO  (GetResults.java: 123) - --[Done Retrieving Results]----------
+[2014-01-26 17:02:21] INFO  (GetResults.java: 130) - 
+Results have been written to file '../samples/external_hit/external_hit.results'.
+
+[2014-01-26 17:02:21] INFO  (GetResults.java: 134) - Assignments completed: 1/5 (20%)
+[2014-01-26 17:02:21] INFO  (GetResults.java: 137) -          Time elapsed: 0:05:12 (h:mm:ss)
+[2014-01-26 17:02:21] INFO  (GetResults.java: 142) -   Average submit time: 4.0 seconds
+[2014-01-26 17:02:34] INFO  (GetResults.java: 119) - --[Retrieving Results]----------
+[2014-01-26 17:02:34] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2014-01-26 17:02:35] INFO  (GetResults.java: 162) - Retrieved HIT 1/5, 2SLQ39Z0B6UWHQUK8WJTYRKG2C6XMM
+[2014-01-26 17:02:35] INFO  (GetResults.java: 162) - Retrieved HIT 2/5, 25C3K4F0OHOYKL5YRLF2O92HRSB219
+[2014-01-26 17:02:35] INFO  (GetResults.java: 162) - Retrieved HIT 3/5, 2FJTHV8ER9YBM7LYG0JM8KFH5I2Q32
+[2014-01-26 17:02:35] INFO  (GetResults.java: 162) - Retrieved HIT 4/5, 2RWSCWY2AOO596NUAPFGTSCMJYP22Q
+[2014-01-26 17:02:35] INFO  (GetResults.java: 162) - Retrieved HIT 5/5, 29QSV7WGKCCYE54S44UMKAPQHSNS2I
+[2014-01-26 17:02:35] INFO  (GetResults.java: 123) - --[Done Retrieving Results]----------
+[2014-01-26 17:02:35] INFO  (GetResults.java: 130) - 
+Results have been written to file '../samples/external_hit/external_hit.results'.
+
+[2014-01-26 17:02:35] INFO  (GetResults.java: 134) - Assignments completed: 1/5 (20%)
+[2014-01-26 17:02:35] INFO  (GetResults.java: 137) -          Time elapsed: 0:05:26 (h:mm:ss)
+[2014-01-26 17:02:35] INFO  (GetResults.java: 142) -   Average submit time: 4.0 seconds
+[2014-01-26 17:06:54] INFO  (GetResults.java: 119) - --[Retrieving Results]----------
+[2014-01-26 17:06:54] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2014-01-26 17:06:55] INFO  (GetResults.java: 162) - Retrieved HIT 1/5, 2SLQ39Z0B6UWHQUK8WJTYRKG2C6XMM
+[2014-01-26 17:06:55] INFO  (GetResults.java: 162) - Retrieved HIT 2/5, 25C3K4F0OHOYKL5YRLF2O92HRSB219
+[2014-01-26 17:06:55] INFO  (GetResults.java: 162) - Retrieved HIT 3/5, 2FJTHV8ER9YBM7LYG0JM8KFH5I2Q32
+[2014-01-26 17:06:56] INFO  (GetResults.java: 162) - Retrieved HIT 4/5, 2RWSCWY2AOO596NUAPFGTSCMJYP22Q
+[2014-01-26 17:06:56] INFO  (GetResults.java: 162) - Retrieved HIT 5/5, 29QSV7WGKCCYE54S44UMKAPQHSNS2I
+[2014-01-26 17:06:56] INFO  (GetResults.java: 123) - --[Done Retrieving Results]----------
+[2014-01-26 17:06:56] INFO  (GetResults.java: 130) - 
+Results have been written to file '../samples/external_hit/external_hit.results'.
+
+[2014-01-26 17:06:56] INFO  (GetResults.java: 134) - Assignments completed: 2/5 (40%)
+[2014-01-26 17:06:56] INFO  (GetResults.java: 137) -          Time elapsed: 0:09:47 (h:mm:ss)
+[2014-01-26 17:06:56] INFO  (GetResults.java: 142) -   Average submit time: 5.5 seconds
