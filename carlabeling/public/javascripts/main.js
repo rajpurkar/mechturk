@@ -1,3 +1,26 @@
+var preview;
+
+
+document.getElementById('pageFrame').src = decode(gup('url'));
+document.getElementById('assignmentId').value = gup('assignmentId');
+//
+// Check if the worker is PREVIEWING the HIT or if they've ACCEPTED the HIT
+//
+if (gup('assignmentId') == "ASSIGNMENT_ID_NOT_AVAILABLE")
+{
+    // If we're previewing, disable the button and give it a helpful message
+    document.getElementById('submitButton').disabled = true;
+    $('bt').disabled = true;
+    preview = true;
+    document.getElementById('submitButton').value = "You must ACCEPT the HIT before you can submit the results.";
+} else {
+    var form = document.getElementById('mturk_form');
+    if (document.referrer && (document.referrer.indexOf('workersandbox') != -1) ) {
+        form.action = "http://workersandbox.mturk.com/mturk/externalSubmit";
+    }
+}
+
+
 var image = new Image();
 
 image.onload = function() {
@@ -19,7 +42,7 @@ var markCollection;
 
 
 $('#myCanvas').click(function(e) {
-    if(!preview){
+    if(preview==false){
         if (markCollection.alive()) {
             var mouse = findMouseOnCanvas(e);
             if (!mark.isSet()) {

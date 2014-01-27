@@ -58,26 +58,6 @@
             <textarea type="textarea" name="markings" id="marks"></textarea> 
             <input id="submitButton" type="submit" name="Submit" value="Submit">
         </form>
-        <script language="Javascript">
-            document.getElementById('pageFrame').src = decode(gup('url'));
-            document.getElementById('assignmentId').value = gup('assignmentId');
-            //
-            // Check if the worker is PREVIEWING the HIT or if they've ACCEPTED the HIT
-            //
-            if (gup('assignmentId') == "ASSIGNMENT_ID_NOT_AVAILABLE")
-            {
-                // If we're previewing, disable the button and give it a helpful message
-                document.getElementById('submitButton').disabled = true;
-                $('bt').disabled = true;
-                var preview = true;
-                document.getElementById('submitButton').value = "You must ACCEPT the HIT before you can submit the results.";
-                } else {
-                var form = document.getElementById('mturk_form');
-                if (document.referrer && (document.referrer.indexOf('workersandbox') != -1) ) {
-                    form.action = "http://workersandbox.mturk.com/mturk/externalSubmit";
-                }
-            }
-        </script>
         <script src="javascripts/jquery-1.8.3.min.js"></script>
         <script src="javascripts/classes.js"></script>
         <script src="javascripts/helper.js"></script>

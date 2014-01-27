@@ -513,3 +513,30 @@ com.amazonaws.mturk.service.exception.ServiceException: HIT still being worked o
 [2014-01-26 20:12:50] INFO  (DeleteHITs.java: 74) - --- Finished to delete HITs ---
 [2014-01-26 20:12:50] INFO  (DeleteHITs.java: 75) -   9 HITs have been deleted or were deleted previously.
 [2014-01-26 20:12:50] INFO  (DeleteHITs.java: 76) -   1 errors occured.
+[2014-01-26 21:35:36] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2014-01-26 21:35:36] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2014-01-26 21:35:36] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2014-01-26 21:35:36] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2014-01-26 21:35:36] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2014-01-26 21:35:37] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2014-01-26 21:35:37] INFO  (LoadHITs.java: 231) -   Start time: Sun Jan 26 21:35:37 PST 2014
+[2014-01-26 21:35:37] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2014-01-26 21:35:38] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=27ZM8JIA0RYQCT33DLD08BMJ6AZ50D
+[2014-01-26 21:35:38] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=20ZSTLB3L0FECTJ45K5JUEVEI76VJG
+[2014-01-26 21:35:38] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=26L6XBAT2D5QJIOL94H0MG5TB2551G
+[2014-01-26 21:35:38] INFO  (RequesterService.java: 1548) - Created HIT 4: HITId=2G1MJUNU8LZ9KR1WZS08G8J38UP2I4
+[2014-01-26 21:35:38] INFO  (RequesterService.java: 1548) - Created HIT 5: HITId=2CFX2Q45UUKTHIH3CXSNV8OGDHHTBD
+[2014-01-26 21:35:38] INFO  (RequesterService.java: 1548) - Created HIT 6: HITId=2LOUXFCD45XF7DOTMOKKLN3TT5LXV6
+[2014-01-26 21:35:38] INFO  (RequesterService.java: 1548) - Created HIT 7: HITId=2DKDIPDOBDDS19KCEV4DBXMBG6L0B9
+[2014-01-26 21:35:39] INFO  (RequesterService.java: 1548) - Created HIT 8: HITId=2E4B3Q39Z0B9NDPMN55VVTVRXW6VKF
+[2014-01-26 21:35:39] INFO  (RequesterService.java: 1548) - Created HIT 9: HITId=25UCF0CP5KXSM2OYCYPG7PM70ENXWG
+[2014-01-26 21:35:39] INFO  (RequesterService.java: 1548) - Created HIT 10: HITId=2C8VJ8EBDPGIEQWSJXQ9UNDWV4D0FR
+[2014-01-26 21:35:39] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '2EVQ45UUKQO197JCVOJ8RG010VGDV5' here: 
+[2014-01-26 21:35:39] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=2EVQ45UUKQO197JCVOJ8RG010VGDV5
+
+[2014-01-26 21:35:39] INFO  (LoadHITs.java: 239) -   End time: Sun Jan 26 21:35:39 PST 2014
+[2014-01-26 21:35:39] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2014-01-26 21:35:39] INFO  (LoadHITs.java: 241) -   Total load time: 1 seconds.
+[2014-01-26 21:35:39] INFO  (LoadHITs.java: 243) -   Successfully loaded 10 HITs.
