@@ -442,3 +442,74 @@ Results have been written to file '../samples/external_hit/external_hit.results'
 [2014-01-26 17:06:56] INFO  (GetResults.java: 134) - Assignments completed: 2/5 (40%)
 [2014-01-26 17:06:56] INFO  (GetResults.java: 137) -          Time elapsed: 0:09:47 (h:mm:ss)
 [2014-01-26 17:06:56] INFO  (GetResults.java: 142) -   Average submit time: 5.5 seconds
+[2014-01-26 20:04:59] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2014-01-26 20:04:59] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2014-01-26 20:04:59] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2014-01-26 20:04:59] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2014-01-26 20:04:59] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2014-01-26 20:05:00] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2014-01-26 20:05:00] INFO  (LoadHITs.java: 231) -   Start time: Sun Jan 26 20:05:00 PST 2014
+[2014-01-26 20:05:00] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2014-01-26 20:05:01] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=2UJX3V0FK0CRDMKUVNYPNK9L4CMNGM
+[2014-01-26 20:05:01] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=2DNXH0JPPSI5DIF5FTG78KLMJCZNHL
+[2014-01-26 20:05:01] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=217EIB9BAWLVFHQ6ZWOUG3MT47PZ2W
+[2014-01-26 20:05:01] INFO  (RequesterService.java: 1548) - Created HIT 4: HITId=2LW6AUBXHWSK0ZMP3W2ZZDRLALPZ37
+[2014-01-26 20:05:02] INFO  (RequesterService.java: 1548) - Created HIT 5: HITId=2LKJ1LY58B75061YAGBHG16YS8BS70
+[2014-01-26 20:05:02] INFO  (RequesterService.java: 1548) - Created HIT 6: HITId=2PFMB3Q39Z0EZEU40UVEYSTV40WUJP
+[2014-01-26 20:05:02] INFO  (RequesterService.java: 1548) - Created HIT 7: HITId=2H6NNVRH1KHR2YH758XNY9LK9NDPYI
+[2014-01-26 20:05:02] INFO  (RequesterService.java: 1548) - Created HIT 8: HITId=24M6UXFCD4505YU37TETNIN36W5WUM
+[2014-01-26 20:05:02] INFO  (RequesterService.java: 1548) - Created HIT 9: HITId=2N6Q1SNQQ7Q90K6HKL3NU12T3SHS8N
+[2014-01-26 20:05:02] INFO  (RequesterService.java: 1548) - Created HIT 10: HITId=2HNBMJTUHYW59DQPLBYS8WM1JPENIE
+[2014-01-26 20:05:02] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '2EVQ45UUKQO197JCVOJ8RG010VGDV5' here: 
+[2014-01-26 20:05:02] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=2EVQ45UUKQO197JCVOJ8RG010VGDV5
+
+[2014-01-26 20:05:02] INFO  (LoadHITs.java: 239) -   End time: Sun Jan 26 20:05:02 PST 2014
+[2014-01-26 20:05:02] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2014-01-26 20:05:02] INFO  (LoadHITs.java: 241) -   Total load time: 1 seconds.
+[2014-01-26 20:05:02] INFO  (LoadHITs.java: 243) -   Successfully loaded 10 HITs.
+[2014-01-26 20:10:28] INFO  (GetResults.java: 119) - --[Retrieving Results]----------
+[2014-01-26 20:10:28] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2014-01-26 20:10:29] INFO  (GetResults.java: 162) - Retrieved HIT 1/10, 2UJX3V0FK0CRDMKUVNYPNK9L4CMNGM
+[2014-01-26 20:10:29] INFO  (GetResults.java: 162) - Retrieved HIT 2/10, 2DNXH0JPPSI5DIF5FTG78KLMJCZNHL
+[2014-01-26 20:10:29] INFO  (GetResults.java: 162) - Retrieved HIT 3/10, 217EIB9BAWLVFHQ6ZWOUG3MT47PZ2W
+[2014-01-26 20:10:29] INFO  (GetResults.java: 162) - Retrieved HIT 4/10, 2LW6AUBXHWSK0ZMP3W2ZZDRLALPZ37
+[2014-01-26 20:10:29] INFO  (GetResults.java: 162) - Retrieved HIT 5/10, 2LKJ1LY58B75061YAGBHG16YS8BS70
+[2014-01-26 20:10:30] INFO  (GetResults.java: 162) - Retrieved HIT 6/10, 2PFMB3Q39Z0EZEU40UVEYSTV40WUJP
+[2014-01-26 20:10:30] INFO  (GetResults.java: 162) - Retrieved HIT 7/10, 2H6NNVRH1KHR2YH758XNY9LK9NDPYI
+[2014-01-26 20:10:30] INFO  (GetResults.java: 162) - Retrieved HIT 8/10, 24M6UXFCD4505YU37TETNIN36W5WUM
+[2014-01-26 20:10:30] INFO  (GetResults.java: 162) - Retrieved HIT 9/10, 2N6Q1SNQQ7Q90K6HKL3NU12T3SHS8N
+[2014-01-26 20:10:30] INFO  (GetResults.java: 162) - Retrieved HIT 10/10, 2HNBMJTUHYW59DQPLBYS8WM1JPENIE
+[2014-01-26 20:10:30] INFO  (GetResults.java: 123) - --[Done Retrieving Results]----------
+[2014-01-26 20:10:30] INFO  (GetResults.java: 130) - 
+Results have been written to file '../samples/external_hit/external_hit.results'.
+
+[2014-01-26 20:10:30] INFO  (GetResults.java: 134) - Assignments completed: 7/10 (70%)
+[2014-01-26 20:10:30] INFO  (GetResults.java: 137) -          Time elapsed: 0:05:29 (h:mm:ss)
+[2014-01-26 20:10:30] INFO  (GetResults.java: 142) -   Average submit time: 37.6 seconds
+[2014-01-26 20:12:42] INFO  (DeleteHITs.java: 67) - --- Starting to delete HITs ---
+[2014-01-26 20:12:42] INFO  (AbstractCmd.java: 224) - You are about to delete 10 HITs.
+[2014-01-26 20:12:42] INFO  (AbstractCmd.java: 225) - To confirm this operation, please press ENTER (or press Ctrl+C to abort): 
+[2014-01-26 20:12:45] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2014-01-26 20:12:47] INFO  (DeleteHITs.java: 102) - [2UJX3V0FK0CRDMKUVNYPNK9L4CMNGM] Successfully deleted HIT (1/10)
+[2014-01-26 20:12:47] INFO  (DeleteHITs.java: 102) - [2DNXH0JPPSI5DIF5FTG78KLMJCZNHL] Successfully deleted HIT (2/10)
+[2014-01-26 20:12:47] ERROR (DeleteHITs.java: 107) - [217EIB9BAWLVFHQ6ZWOUG3MT47PZ2W] FAILURE Deleting HIT: HIT still being worked on. Not deleted. (3/10)
+com.amazonaws.mturk.service.exception.ServiceException: HIT still being worked on. Not deleted.
+	at com.amazonaws.mturk.service.axis.DeleteHITCommand.processFailure(DeleteHITCommand.java:197)
+	at com.amazonaws.mturk.service.axis.AsyncRequest.call(AsyncRequest.java:80)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+[2014-01-26 20:12:48] INFO  (DeleteHITs.java: 102) - [2LW6AUBXHWSK0ZMP3W2ZZDRLALPZ37] Successfully deleted HIT (4/10)
+[2014-01-26 20:12:48] INFO  (DeleteHITs.java: 102) - [2LKJ1LY58B75061YAGBHG16YS8BS70] Successfully deleted HIT (5/10)
+[2014-01-26 20:12:48] INFO  (DeleteHITs.java: 102) - [2PFMB3Q39Z0EZEU40UVEYSTV40WUJP] Successfully deleted HIT (6/10)
+[2014-01-26 20:12:49] INFO  (DeleteHITs.java: 102) - [2H6NNVRH1KHR2YH758XNY9LK9NDPYI] Successfully deleted HIT (7/10)
+[2014-01-26 20:12:49] INFO  (DeleteHITs.java: 102) - [24M6UXFCD4505YU37TETNIN36W5WUM] Successfully deleted HIT (8/10)
+[2014-01-26 20:12:50] INFO  (DeleteHITs.java: 102) - [2N6Q1SNQQ7Q90K6HKL3NU12T3SHS8N] Successfully deleted HIT (9/10)
+[2014-01-26 20:12:50] INFO  (DeleteHITs.java: 102) - [2HNBMJTUHYW59DQPLBYS8WM1JPENIE] Successfully deleted HIT (10/10)
+[2014-01-26 20:12:50] INFO  (DeleteHITs.java: 74) - --- Finished to delete HITs ---
+[2014-01-26 20:12:50] INFO  (DeleteHITs.java: 75) -   9 HITs have been deleted or were deleted previously.
+[2014-01-26 20:12:50] INFO  (DeleteHITs.java: 76) -   1 errors occured.

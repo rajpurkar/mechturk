@@ -56,22 +56,7 @@
         <form id="mturk_form" method="POST" action="http://www.mturk.com/mturk/externalSubmit">
             <input type="hidden" id="assignmentId" name="assignmentId" value="">
             <textarea type="textarea" name="markings" id="marks"></textarea> 
-            <table border="0" height="100%" width="100%">
-                <tr><td>
-                        <h1>What type of webpage is shown below?</h1>
-                        <p>
-                        <input type="radio" name="category" value="news">&nbsp;News Site<br>
-                        <input type="radio" name="category" value="search">&nbsp;Search Engine<br>
-                        <input type="radio" name="category" value="retail">&nbsp;Online Retailer<br>
-                        <input type="radio" name="category" value="other" selected>&nbsp;Other<br>
-                        <p>
-                        <input id="submitButton" type="submit" name="Submit" value="Submit">
-                        <p>
-                </td></tr>
-                <tr><td height="100%">
-                        <iframe id="pageFrame" width="100%" height="100%"></iframe>
-                </td></tr>
-            </table>
+            <input id="submitButton" type="submit" name="Submit" value="Submit">
         </form>
         <script language="Javascript">
             document.getElementById('pageFrame').src = decode(gup('url'));
@@ -83,6 +68,8 @@
             {
                 // If we're previewing, disable the button and give it a helpful message
                 document.getElementById('submitButton').disabled = true;
+                $('bt').disabled = true;
+                var preview = true;
                 document.getElementById('submitButton').value = "You must ACCEPT the HIT before you can submit the results.";
                 } else {
                 var form = document.getElementById('mturk_form');
