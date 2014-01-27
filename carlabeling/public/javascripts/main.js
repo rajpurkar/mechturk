@@ -1,4 +1,14 @@
-var preview= false;;
+var canvas = document.getElementById('myCanvas');
+var context = canvas.getContext('2d');
+var image = new Image();
+
+image.onload = function() {
+	var dim = resizeImage(image);
+	context.drawImage(image, 0, 0, dim.width, dim.height);
+	markCollection = new MarkingCollection(image);
+}
+
+image.src = decode(gup('url'));
 
 document.getElementById('assignmentId').value = gup('assignmentId');
 //
@@ -6,41 +16,23 @@ document.getElementById('assignmentId').value = gup('assignmentId');
 //
 if (gup('assignmentId') == "ASSIGNMENT_ID_NOT_AVAILABLE")
 {
-    // If we're previewing, disable the button and give it a helpful message
-    document.getElementById('submitButton').disabled = true;
-    $('#bt').prop('disabled', true);
-    preview = true;
-    document.getElementById('submitButton').value = "You must ACCEPT the HIT before you can submit the results.";
+	// If we're previewing, disable the button and give it a helpful message
+	document.getElementById('submitButton').disabled = true;
+	$('#bt').prop('disabled', true);
+	preview = true;
+	document.getElementById('submitButton').value = "You must ACCEPT the HIT before you can submit the results.";
 } else {
-    var form = document.getElementById('mturk_form');
-    if (document.referrer && (document.referrer.indexOf('workersandbox') != -1) ) {
-        form.action = "http://workersandbox.mturk.com/mturk/externalSubmit";
-    }
-}
+	var form = document.getElementById('mturk_form');
+	if (document.referrer && (document.referrer.indexOf('workersandbox') != -1) ) {
+		form.action = "http://workersandbox.mturk.com/mturk/externalSubmit";
+	}
 
+	var mark = new Marking(image);
+	var color = new ColorRotator();
+	var markCollection;
 
-var image = new Image();
-
-image.onload = function() {
-    var dim = resizeImage(image);
-    context.drawImage(image, 0, 0, dim.width, dim.height);
-    markCollection = new MarkingCollection(image);
-}
-
-image.src = decode(gup('url'));
-var canvas = document.getElementById('myCanvas');
-var context = canvas.getContext('2d');
-
-
-var mark = new Marking(image);
-
-var color = new ColorRotator();
-var markCollection;
-
-
-if(preview==false){
 	$('#myCanvas').click(function(e) {
-			if (markCollection.alive()) {
+		if (markCollection.alive()) {
 			var mouse = findMouseOnCanvas(e);
 			if (!mark.isSet()) {
 			mark.markStarted();
@@ -69,13 +61,13 @@ if(preview==false){
 			addMarkToCollection(mark);
 			return;
 			}
-			}
+	}
 	});
 
 	$('#bt').click(function(e) {
-			console.log(markCollection.jsonify());
-			$('#marks').val(markCollection.jsonify());
+		console.log(markCollection.jsonify());
+		$('#marks').val(markCollection.jsonify(),function(){
 			$('#mturk_form').submit();
-			return true;
-			});
+		});
+	});
 }
