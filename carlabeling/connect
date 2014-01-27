@@ -1,0 +1,1 @@
+ssh -i ec2carlabeling.pem ubuntu@ec2-50-19-32-63.compute-1.amazonaws.com

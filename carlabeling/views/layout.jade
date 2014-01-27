@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    div#target
+        |In the image shown, you will be drawing a box around every car.
+    div#message
+        |First, click the top left corner of a car, and then click the bottom right corner
+    canvas#myCanvas(width='600', height='600')
+        Your browser does not support canvas, which is required for this
+        | application. Please download the latest version of a(href='https://www.google.com/intl/en/chrome/browser/') Google Chrome
+    div
+        button#bt(type='button')
+            | Next
+    script(src="javascripts/jquery-1.8.3.min.js")
+    script(src="javascripts/classes.js")
+    script(src="javascripts/helper.js")
+    script(src="javascripts/main.js")
+        
