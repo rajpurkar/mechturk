@@ -1,7 +1,5 @@
-var preview;
+var preview= false;;
 
-
-document.getElementById('pageFrame').src = decode(gup('url'));
 document.getElementById('assignmentId').value = gup('assignmentId');
 //
 // Check if the worker is PREVIEWING the HIT or if they've ACCEPTED the HIT
@@ -10,7 +8,7 @@ if (gup('assignmentId') == "ASSIGNMENT_ID_NOT_AVAILABLE")
 {
     // If we're previewing, disable the button and give it a helpful message
     document.getElementById('submitButton').disabled = true;
-    $('bt').disabled = true;
+    $('#bt').prop('disabled', true);
     preview = true;
     document.getElementById('submitButton').value = "You must ACCEPT the HIT before you can submit the results.";
 } else {
@@ -29,7 +27,6 @@ image.onload = function() {
     markCollection = new MarkingCollection(image);
 }
 
-console.log(gup('url'));
 image.src = decode(gup('url'));
 var canvas = document.getElementById('myCanvas');
 var context = canvas.getContext('2d');
@@ -41,43 +38,43 @@ var color = new ColorRotator();
 var markCollection;
 
 
-$('#myCanvas').click(function(e) {
-    if(preview==false){
-        if (markCollection.alive()) {
-            var mouse = findMouseOnCanvas(e);
-            if (!mark.isSet()) {
-                mark.markStarted();
-                mark.addPoint(mouse);
-                context.beginPath();
-                context.lineWidth = 3;
-                context.strokeStyle = context.fillStyle = color.getNextColor();
-                context.moveTo(mouse.x, mouse.y);
-                context.arc(mouse.x, mouse.y, 3, 0, 2 * Math.PI, true);
-                context.fill();
-                context.stroke();
-                $("#message").text("Now select the bottom right of the car.");
-            } else {
-                mark.addPoint(mouse);
-                context.moveTo(mouse.x, mouse.y);
-                context.arc(mouse.x, mouse.y, 3, 0, 2 * Math.PI, true);
-                context.fill();
-                context.stroke();
-                context.closePath();
-                var marking = mark.getPoints();
-                context.beginPath();
-                context.rect(marking[0].x, marking[0].y, marking[1].x- marking[0].x, marking[1].y- marking[0].y);
-                context.stroke();
-                context.closePath();
-                $("#message").text("Now select the top-left of another car. Or press submit to finish.");
-                addMarkToCollection(mark);
-                return;
-            }
-        }
-    }
-});
+if(preview==false){
+	$('#myCanvas').click(function(e) {
+			if (markCollection.alive()) {
+			var mouse = findMouseOnCanvas(e);
+			if (!mark.isSet()) {
+			mark.markStarted();
+			mark.addPoint(mouse);
+			context.beginPath();
+			context.lineWidth = 3;
+			context.strokeStyle = context.fillStyle = color.getNextColor();
+			context.moveTo(mouse.x, mouse.y);
+			context.arc(mouse.x, mouse.y, 3, 0, 2 * Math.PI, true);
+			context.fill();
+			context.stroke();
+			$("#message").text("Now select the bottom right of the car.");
+			} else {
+			mark.addPoint(mouse);
+			context.moveTo(mouse.x, mouse.y);
+			context.arc(mouse.x, mouse.y, 3, 0, 2 * Math.PI, true);
+			context.fill();
+			context.stroke();
+			context.closePath();
+			var marking = mark.getPoints();
+			context.beginPath();
+			context.rect(marking[0].x, marking[0].y, marking[1].x- marking[0].x, marking[1].y- marking[0].y);
+			context.stroke();
+			context.closePath();
+			$("#message").text("Now select the top-left of another car. Or press submit to finish.");
+			addMarkToCollection(mark);
+			return;
+			}
+			}
+	});
 
-$('#bt').click(function(e) {
-    console.log(markCollection.jsonify());
-    $('#marks').val(markCollection.jsonify());
-    return false;
-});
+	$('#bt').click(function(e) {
+			console.log(markCollection.jsonify());
+			$('#marks').val(markCollection.jsonify());
+			return false;
+			});
+}
