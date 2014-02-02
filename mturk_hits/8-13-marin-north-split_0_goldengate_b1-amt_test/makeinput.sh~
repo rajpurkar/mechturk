@@ -1,0 +1,6 @@
+rm -f ./input
+echo "urls" > input
+
+BATCH_NAME=car_detect_580E_split0
+
+find /home/andriluk/public_html/car_detect/vatic_public/${BATCH_NAME}/ -name "*jpeg" -printf "${BATCH_NAME}/%f\n" >> input
