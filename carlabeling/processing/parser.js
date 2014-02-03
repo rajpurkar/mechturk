@@ -1,6 +1,7 @@
 var fs = require('fs');
 var $ = jQuery = require('jQuery');
 require('./jquery.csv.js');
+var builder = require('xmlbuilder');
 
 Array.prototype.transpose = function() {
 
@@ -48,16 +49,39 @@ function getColOf(mat, search){
 	return (mat[0].indexOf(search))
 }
 
-var sample = 'samp2.csv';
+var filename = 'samp.results';
 var total = [];
-fs.readFile(sample, 'UTF-8', function(err, csv) {
+fs.readFile(filename, 'UTF-8', function(err, csv) {
     $.csv.toArrays(csv, {delimiter:'"', separator:'\t', }, function(err, data) {
-        a= getCol(data,getColOf(data, "annotation"));
-        b= getCol(data,getColOf(data, "Answer.markings"));
-        total.push(a);
-        total.push(b);
-        total =total.transpose();
-        console.log(total)
+        makeal(data);
     });
 });
 
+function makeal(data){
+   var al = builder.create("annotationlist");
+       //can be multiple annotation
+       for(var i = 0; i< data.length; i++){
+        al.ele("annotation")
+                .ele("image")
+                    .ele("name", "name here")
+                    .up()
+                .up()
+            //can be many of these
+            .ele("annorect")
+                .ele("amt_annotation_str","annotation str here")
+                .insertAfter("hitid")
+                .insertAfter("assignmentid")
+                .insertAfter("workerid")
+                //4 of these
+                .insertAfter("insert xs ys here")
+                .insertAfter("silhouette")
+                    .ele("id", "id here")
+                .up().ele("score", "score here");
+        }
+    var xml = al.end({ pretty: true});
+   console.log(xml.substr(xml.indexOf('\n')));
+}
+
+function makeidl(data){
+    
+}
