@@ -37,51 +37,89 @@ Array.prototype.transpose = function() {
   return t;
 };
 
+Array.prototype.chunk = function(chunkSize) {
+    var array=this;
+    return [].concat.apply([],
+            array.map(function(elem,i) {
+                return i%chunkSize ? [] : [array.slice(i,i+chunkSize)];
+            })
+            );
+}
+
 function getCol(matrix, col){
-   var column = [];
-   for(var i=0; i<matrix.length; i++){
-      column.push(matrix[i][col]);
-   }
-   return column;
+    var column = [];
+    for(var i=0; i<matrix.length; i++){
+        column.push(matrix[i][col]);
+    }
+    return column;
 }
 
 function getColOf(mat, search){	
-	return (mat[0].indexOf(search))
+    return (mat[0].indexOf(search))
 }
 
-var filename = 'samp.results';
+var filename = 'samp.csv';
 var total = [];
 fs.readFile(filename, 'UTF-8', function(err, csv) {
     $.csv.toArrays(csv, {delimiter:'"', separator:'\t', }, function(err, data) {
         makeal(data);
+        makeidl(data);
     });
 });
 
+function processResults(results){
+    results = results.split(",");
+    var rects = results.slice(1);
+    if(rects.length%4 !== 0) throw "rectangle markings not a multiple of four"
+    return rects.chunk(4);
+}
+
+function e(data, str, i){
+    return data[i+1][getColOf(data, str)];
+}
+
 function makeal(data){
-   var al = builder.create("annotationlist");
-       //can be multiple annotation
-       for(var i = 0; i< data.length; i++){
-        al.ele("annotation")
-                .ele("image")
-                    .ele("name", "name here")
-                    .up()
-                .up()
+    var al = builder.create("annotationlist");
+    //can be multiple annotation
+    for(var i = 0; i< data.length-1; i++){
+        var annot = al.ele("annotation")
+            .ele("image")
+            .ele("name", e(data, "annotation", i))
             //can be many of these
-            .ele("annorect")
-                .ele("amt_annotation_str","annotation str here")
-                .insertAfter("hitid")
-                .insertAfter("assignmentid")
-                .insertAfter("workerid")
-                //4 of these
-                .insertAfter("insert xs ys here")
+            var results = processResults(e(data, "Answer.results", i));
+        for ( var j = 0; j < results.length; j++){
+            var rectCoords = results[j]; 
+            annot.ele("annorect")
+                .ele("amt_annotation_str", e(data, "annotation", i))
+                .insertAfter("hitid", e(data,"hitid", i)) 
+                .insertAfter("assignmentid", e(data, "assignmentid", i))
+                .insertAfter("workerid", e(data, "workerid", i))
+                .insertAfter("x1", rectCoords[0])
+                .insertAfter("y1", rectCoords[1])
+                .insertAfter("x2", rectCoords[2])
+                .insertAfter("y2", rectCoords[3])
                 .insertAfter("silhouette")
-                    .ele("id", "id here")
+                //what does this id mean?
+                .ele("id", "id here")
+                //what does score mean?
                 .up().ele("score", "score here");
         }
+    }
     var xml = al.end({ pretty: true});
-   console.log(xml.substr(xml.indexOf('\n')));
+    //console.log(xml.substr(xml.indexOf('\n')));
 }
 
 function makeidl(data){
-    
+    var str = "";
+   for(var i = 0; i< data.length-1; i++){ 
+      var image = e(data, "annotation", i);  
+      str += image + ": ";
+      var markings= processResults(e(data, "Answer.results", i));
+      for(var j =0; j < markings.length -1; j++){
+          if(j!==0) str += ", "
+          str += "(" + markings[j] + "):-1";
+      }
+      str += "; \n" 
+   }
+   console.log(str);
 }
