@@ -77,7 +77,7 @@ function init_objectui() {
 // what to submit to AMT server
 function get_results_string(){
     imgname = gup("imgname");
-    var result = imgname;
+    var result = "label_cars, " + imgname;
 
     // for (var tidx = 0; tidx < tracks.tracks.length; ++tidx) {
     // 	console.log("track " + tidx + ": " + tracks.tracks[tidx].label);

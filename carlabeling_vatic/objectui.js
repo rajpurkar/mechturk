@@ -150,14 +150,15 @@ function TrackObjectUI(button, container, videoframe, job, player, tracks)
 	// MA
         //var html = "<p>In this video, please track all of these objects:</p>";
 
-        var html = "<p>In this image, please label all of these objects:</p>";
+        var html = "<p>Keyboard shortcuts: <font color='blue'>'n'</font> - new vehicle, <font color='blue'>'t'</font> - toggle between occluded/visible state, <font color='blue'>'d'</font> - delete vehicle.</p>";
+        //html += "<p>In this image, please label all of these objects:</p>";
 
-        html += "<ul>";
-        for (var i in this.job.labels)
-        {
-            html += "<li>" + this.job.labels[i] + "</li>";
-        }
-        html += "</ul>";
+        // html += "<ul>";
+        // for (var i in this.job.labels)
+        // {
+        //     html += "<li>" + this.job.labels[i] + "</li>";
+        // }
+        // html += "</ul>";
 
         this.instructions = $(html).appendTo(this.container);
     }
@@ -414,9 +415,10 @@ function TrackObject(job, player, container, color)
 
     this.setupdetails = function()
     {
-        this.details.append("<input type='checkbox' id='trackobject" + this.id + "lost'> <label for='trackobject" + this.id + "lost'>Outside of view frame</label><br>");
+	// MA
+        //this.details.append("<input type='checkbox' id='trackobject" + this.id + "lost'> <label for='trackobject" + this.id + "lost'>Outside of view frame</label><br>");
 
-        this.details.append("<input type='checkbox' id='trackobject" + this.id + "occluded'> <label for='trackobject" + this.id + "occluded'>Occluded or obstructed</label><br>");
+        this.details.append("<input type='checkbox' id='trackobject" + this.id + "occluded'> <label for='trackobject" + this.id + "occluded'>Occluded or truncated</label><br>");
 
         for (var i in this.job.attributes[this.track.label])
         {

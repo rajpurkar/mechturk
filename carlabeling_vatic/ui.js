@@ -296,7 +296,7 @@ function ui_setupkeyboardshortcuts(job, player, tracks)
         {
             $("#newobjectbutton").click();
         }
-	else if (keycode == 46) {
+	else if (keycode == 100) {
 	    $("#trackobject" + tracks.currentptr.id + "delete").click();
 	}
 
