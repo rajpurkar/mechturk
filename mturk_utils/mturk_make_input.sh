@@ -36,7 +36,7 @@ for CUR_DIR in "${IMG_DIR[@]}"; do
 	echo "CUR_DIR: $CUR_DIR"
 	echo "CUR_DIR_1: $CUR_DIR_1"
 
-	echo "$CUR_DIR\n" >> ${HIT_DIR}/input_imgdir.txt    
+	echo "$CUR_DIR" >> ${HIT_DIR}/input_imgdir.txt    
 
 	# for fname in `find -L $CUR_DIR -name "*jpeg" -printf "${S3_HOST_DIR}/${CUR_DIR_1}/%f\n" | sort -n`; do
      	#     echo $fname >> ${HIT_DIR}/input
