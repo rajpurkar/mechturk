@@ -4,11 +4,7 @@
 # mturk_make_input.sh <HIT_DIR> <IMG_DIR1> <IMG_DIR2> ... <IMG_DIR_N>
 #
 
-S3_HOST_DIR=https://s3.amazonaws.com/sv-images
-IMG_DIR_BASE=/local/IMAGES/driving_data_twangcat/all_extracted
-
-# MA: should be the same step as in copy_data_s3.sh, otherwise images might be not on the S3 server
-IMG_STEP=50;
+source `dirname $0`/data_utils_init.sh
 
 HIT_DIR=$1
 HIT_NAME=`basename $HIT_DIR`

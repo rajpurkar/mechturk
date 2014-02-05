@@ -1,7 +1,6 @@
 #!/bin/bash
 
-VIDEO_DIR=/afs/cs.stanford.edu/u/andriluka/mount/scail_group/deeplearning/driving_data/twangcat/raw_data_backup
-EXTRACT_DIR=/local/IMAGES/driving_data_twangcat/
+source `dirname $0`/data_utils_init.sh
 
 VIDEOLIST=$1
 

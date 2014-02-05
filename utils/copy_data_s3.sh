@@ -2,15 +2,15 @@
 #
 # copy_data_s3.sh <dir_with_images1> ... <dir_with_imagesN>
 #
-BASE_DIR=/local/IMAGES/driving_data_twangcat/all_extracted;
-IMG_STEP=50;
+
+source `dirname $0`/data_utils_init.sh
 
 PATH=$PATH:$HOME/code/s3cmd/s3cmd-1.5.0-beta1
 
-# MA: by default copy all data from BASE_DIR, otherwise use command line arguments
+# MA: by default copy all data from IMG_DIR_BASE, otherwise use command line arguments
 if (( $# == 0 )); then
     N=0;
-    for D in `find $BASE_DIR -mindepth 1 -maxdepth 1 -type l -or -type d `; do
+    for D in `find $IMG_DIR_BASE -mindepth 1 -maxdepth 1 -type l -or -type d `; do
 	IMG_DIR_ALL[$N]=$D;
 	N=$(($N + 1));			    
     done
@@ -25,7 +25,7 @@ NTOTAL=0;
 for IMG_DIR in "${IMG_DIR_ALL[@]}"; do
 
     echo $IMG_DIR;
-    IMG_DIR_BASE=`basename $IMG_DIR`;
+    CUR_BASENAME=`basename $IMG_DIR`;
     
     N=0;
     NCOPY=0;
@@ -33,7 +33,7 @@ for IMG_DIR in "${IMG_DIR_ALL[@]}"; do
     	MOD_VAL=$(($N % $IMG_STEP));
 
     	if [ "$MOD_VAL" -eq 0 ]; then 
-    	    s3cmd -v put $F s3://sv-images/driving_data_twangcat/$IMG_DIR_BASE/;	    
+    	    s3cmd -v put $F s3://$S3_DIR/$CUR_BASENAME/;	    
     	    NCOPY=$(($NCOPY + 1));
     	fi
 	
