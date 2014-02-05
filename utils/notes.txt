@@ -1,0 +1,1 @@
+./mturk_make_input.sh ../hits/7-16-sacramento  /local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-*
