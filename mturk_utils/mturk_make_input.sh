@@ -1,34 +1,60 @@
 # 
 # mturk_make_input.sh <HIT_DIR> 
 # or 
-# mturk_make_input.sh <HIT_DIR> <IMG_DIR>
+# mturk_make_input.sh <HIT_DIR> <IMG_DIR1> <IMG_DIR2> ... <IMG_DIR_N>
 #
 
 S3_HOST_DIR=https://s3.amazonaws.com/sv-images
+IMG_DIR_BASE=/local/IMAGES/driving_data_twangcat/all_extracted
+
+# MA: should be the same step as in copy_data_s3.sh, otherwise images might be not on the S3 server
+IMG_STEP=50;
 
 HIT_DIR=$1
 HIT_NAME=`basename $HIT_DIR`
 
-NARGS=$#
-
-if (( $# > 1 )); then
-    IMG_DIR=$2
+if (( $# < 2 )); then
+    IMG_DIR[1]="${IMG_DIR_BASE}/${HIT_NAME}";
 else
-    IMG_DIR_BASE=/local/IMAGES/driving_data_twangcat/tmp
-    IMG_DIR=${IMG_DIR_BASE}/${HIT_NAME}
-
-    IMG_DIR_1=`basename $IMG_DIR`;
+    NARGS=$#
+    for i in `seq 2 $NARGS`; do 
+	IMG_DIR[$((i-1))]=${!i};
+    done   
 fi
 
-echo "IMG_DIR: $IMG_DIR"
-echo "IMG_DIR_1: $IMG_DIR_1"
 echo "HIT_DIR: $HIT_DIR"
 
-
-rm -f ${HIT_DIR}/input
-echo "urls" > ${HIT_DIR}/input
-echo $IMG_DIR > ${HIT_DIR}/input_imgdir.txt
+rm -f ${HIT_DIR}/input_imgdir.txt
 
 echo "saving results to $HIT_DIR/input"
-find $IMG_DIR -name "*jpeg" -printf "${S3_HOST_DIR}/${IMG_DIR_1}/%f\n" | sort -n >> ${HIT_DIR}/input
+rm -f ${HIT_DIR}/input
+echo "urls" > ${HIT_DIR}/input
 
+for CUR_DIR in "${IMG_DIR[@]}"; do
+    if [ -d $CUR_DIR ]; then
+	CUR_DIR_1=`basename $CUR_DIR`;
+	echo "CUR_DIR: $CUR_DIR"
+	echo "CUR_DIR_1: $CUR_DIR_1"
+
+	echo "$CUR_DIR\n" >> ${HIT_DIR}/input_imgdir.txt    
+
+	# for fname in `find -L $CUR_DIR -name "*jpeg" -printf "${S3_HOST_DIR}/${CUR_DIR_1}/%f\n" | sort -n`; do
+     	#     echo $fname >> ${HIT_DIR}/input
+	# done
+
+	N=0;
+	for fname in `find -L $CUR_DIR -name "*jpeg" -printf "${S3_HOST_DIR}/${CUR_DIR_1}/%f\n" | sort -n`; do
+	    MOD_VAL=$(($N % $IMG_STEP));
+	
+     	    if [ "$MOD_VAL" -eq 0 ]; then 
+		echo $fname >> ${HIT_DIR}/input
+	    fi
+
+	    N=$(($N + 1));	
+	done
+
+    else
+	echo "error: $CUR_DIR does not exist or is not a directory";
+	exit;
+    fi
+done 
