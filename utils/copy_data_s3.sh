@@ -21,26 +21,25 @@ else
     done   
 fi
 
-NTOTAL=0;
+TOTAL_IMGS=0;
 for IMG_DIR in "${IMG_DIR_ALL[@]}"; do
 
     echo $IMG_DIR;
     CUR_BASENAME=`basename $IMG_DIR`;
     
     N=0;
-    NCOPY=0;
     for F in `find $IMG_DIR/ -name "*jpeg" | sort -n`; do
     	MOD_VAL=$(($N % $IMG_STEP));
 
     	if [ "$MOD_VAL" -eq 0 ]; then 
     	    s3cmd -v put $F s3://$S3_DIR/$CUR_BASENAME/;	    
-    	    NCOPY=$(($NCOPY + 1));
+    	    TOTAL_IMGS=$(($TOTAL_IMGS + 1));
     	fi
 	
     	N=$(($N + 1));
     done 
     echo "images in current directory: $NCOPY";
-    NTOTAL=$(($NTOTAL+$NCOPY));
+
 
 done
-echo "total images: $NTOTAL";
+echo "total images: $TOTAL_IMGS";

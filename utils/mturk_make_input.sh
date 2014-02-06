@@ -26,6 +26,7 @@ echo "saving results to $HIT_DIR/input"
 rm -f ${HIT_DIR}/input
 echo "urls" > ${HIT_DIR}/input
 
+TOTALN=0;
 for CUR_DIR in "${IMG_DIR[@]}"; do
     if [ -d $CUR_DIR ]; then
 	CUR_DIR_1=`basename $CUR_DIR`;
@@ -44,6 +45,7 @@ for CUR_DIR in "${IMG_DIR[@]}"; do
 	
      	    if [ "$MOD_VAL" -eq 0 ]; then 
 		echo $fname >> ${HIT_DIR}/input
+		TOTALN=$(($TOTALN + 1));	
 	    fi
 
 	    N=$(($N + 1));	
@@ -54,3 +56,5 @@ for CUR_DIR in "${IMG_DIR[@]}"; do
 	exit;
     fi
 done 
+
+echo "total images: $TOTALN"
