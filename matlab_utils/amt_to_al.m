@@ -377,7 +377,7 @@ for aidx = 2:size(A, 1)
                     annolist(hit_aidx).annorect(hit_ridx).x2 = round(str2num(tokens{6*(hit_ridx - 1) + 5}));
                     annolist(hit_aidx).annorect(hit_ridx).y2 = round(str2num(tokens{6*(hit_ridx - 1) + 6}));
                     
-                    annolist(hit_aidx).annorect(hit_ridx).silhouette.id = str2num(tokens{6*(hit_ridx - 1) + 8});
+                    annolist(hit_aidx).annorect(hit_ridx).silhouette.id = str2num(tokens{6*(hit_ridx - 1) + 7});
                 end
                 
             else
