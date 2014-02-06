@@ -1,0 +1,15 @@
+/local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-I5N-split_0_I5N_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-880S-237W-101N-split_0_880S_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-580E-split_0_580E_b1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-101S-split_0_101S_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-I5N-split_0_I5N_c1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-680N-split_0_680N_b1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-237E-split_0_237E_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-680N-split_0_680N_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-580E-split_0_580E_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-680S-split_0_680S_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-80W-split_0_80W_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-I5N-split_0_I5N_b1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-580E-split_0_580E_c1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-680S-split_0_680S_b1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-880S-237W-101N-split_0_880S_b1
