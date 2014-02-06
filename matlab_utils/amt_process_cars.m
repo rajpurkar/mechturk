@@ -1,7 +1,8 @@
 function amt_process_cars(amt_results);
 
   base_img_dir = '/local/IMAGES/driving_data_twangcat/all_extracted';
-  amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/7-16-sacramento-v2/7-16-sacramento-v2.results';
+  %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/7-16-sacramento-v2/7-16-sacramento-v2.results';
+  amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/7-16-sacramento/7-16-sacramento.results';
     
   % extract annotations from amt results table
   annolist_all_workers = amt_to_al(base_img_dir, amt_results);
