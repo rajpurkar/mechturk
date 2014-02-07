@@ -84,7 +84,9 @@ for aidx = 2:size(A, 1)
                 else
                     num_anno = num_anno + 1;
                     hit_aidx = num_anno;
+
                     annolist(hit_aidx).image.name = [basedir '/' fname];
+
                     annolist(hit_aidx).annorect = struct('x1', {}, 'y1', {}, 'x2', {}, 'y2', {}, 'annopoints', {}, 'is_error', {}, ...
                         'workerid', {}, 'comment', {}, 'time', {}, 'hitid', {}, 'assignmentid', {});
                     annotation_by_name(fname) = hit_aidx;
@@ -352,7 +354,12 @@ for aidx = 2:size(A, 1)
                 else
                     num_anno = num_anno + 1;
                     hit_aidx = num_anno;
-                    annolist(hit_aidx).image.name = [basedir '/' fname];
+
+                    %annolist(hit_aidx).image.name = [basedir '/' fname];
+		    
+		    % MA: switch to using relative path (easier to copy to the shared fileserver)
+		    annolist(hit_aidx).image.name = fname;
+
                     disp(annolist(hit_aidx).image.name);
                     %annolist(hit_aidx).annorect = struct('x1', {}, 'y1', {}, 'x2', {}, 'y2', {}, 'annopoints', {}, 'is_error', {}, ...
                     %'workerid', {}, 'comment', {}, 'time', {}, 'hitid', {}, 'assignmentid', {});

@@ -2,7 +2,13 @@
 
 source `dirname $0`/data_utils_init.sh
 
+if (( $# < 1 )); then
+    echo "usage: extract_data.sh <FILE_WITH_LIST_OF_VIDEOS>"
+    exit;
+fi
+
 VIDEOLIST=$1
+echo "VIDEOLIST: $VIDEOLIST"
 
 for VIDNAME in `cat $VIDEOLIST`; do
     
@@ -32,11 +38,14 @@ for VIDNAME in `cat $VIDEOLIST`; do
 	echo extracting to: $CURDIR;
 	mkdir -p $CURDIR;
 	
-	ffmpeg -i $VIDFILE -qscale 3 $CURDIR/${BASENAME}_%04d.jpeg
+	#ffmpeg -i $VIDFILE -qscale 3 $CURDIR/${BASENAME}_%04d.jpeg
 
 	# make a link in flat hierarchy for easier viewing/copying to S3
 	mkdir -p $EXTRACT_DIR/all_extracted
-	ln -s $CURDIR $EXTRACT_DIR/all_extracted/
+	#ln -s $CURDIR $EXTRACT_DIR/all_extracted/
+
+	# make a relative link
+	ln -s ../$IMGNAME3/$IMGNAME2/$BASENAME $EXTRACT_DIR/all_extracted/$BASENAME
     fi
 
 done
