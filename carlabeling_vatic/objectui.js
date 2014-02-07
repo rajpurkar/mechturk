@@ -152,7 +152,7 @@ function TrackObjectUI(button, container, videoframe, job, player, tracks)
 
 	var num_hints = 4;
 	var hintidx = Math.floor(Math.random()*num_hints);
-        var html = "<p align='center'>Keyboard shortcuts: <font color='blue'>'n'</font> - new vehicle, <font color='blue'>'t'</font> - toggle between obstructed/visible state, <font color='blue'>'d'</font> - delete vehicle.</p><br>";
+        var html = "<p align='center'>Keyboard shortcuts: <font color='blue'>'n'</font> - new vehicle, <font color='blue'>'t'</font> - toggle between partially and fully visible state, <font color='blue'>'d'</font> - delete vehicle.</p><br>";
 
 	if (hintidx == 0) {
             html += "<p align='center'><font color='green'>Hint</font>: labeling boxes should tightly enclose the vehicle: <img width = '200px' src='label_cars_instructions/box_precise.png'/><img width = '200px' src='label_cars_instructions/box_loose.png'/></p>";
