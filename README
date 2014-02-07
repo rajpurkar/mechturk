@@ -1,8 +1,15 @@
--copy data to S3: 
+useful scripts for creating HIT batches: 
+
+* copy_data_s3.sh
+
+./copy_data_s3.sh `find /local/IMAGES/driving_data_twangcat/all_extracted -mindepth 1 -maxdepth 1 -name "7-18-101-*" -type l`
+
+
+* extract_data.sh
+
+* mturk_make_input.sh
 
 
 
-      
-copy_data_s3.sh
-extract_data.sh
-mturk_make_input.sh
+
+

@@ -1,0 +1,381 @@
+%
+% there is a corresponding CSV list without comments (should have used Spreadsheet fromt the beginnign uff...)
+% in the CVS: 0 - means banned, 1 - means candidate for "good worker" but occasionally did mistakes and needs more checking, 2 means "good worker" 
+%
+% *** User status changes in this file should be reflected in the corresponding CVS file  ***
+%
+
+Hiwi (Abirami): AW1N9OBAUFT74
+Hiwi: A3S5VNRL7C8YH0
+Hiwi: A3D64R6HBP763X
+Hiwi: AJUXHVCI4VGE2
+Hiwi: A2YRSZ153XMWML
+Hiwi: AKLLCN1WN7TCO
+Hiwi: A10FM9Y9QSXGZC
+
+worker: A3DY78Q4FCWTXX
+	
+
+	only few hits done so far
+
+	asked for qualification vis mturkforum.com, let see how he does
+
+
+worker: AKAWSE57ZI6D1, num_hits: 215, num_accept: 210
+	will withdraw the qualification
+
+	still not quite there, withdraw qualification? 		       
+	missed ankels in this HIT: 2ALDHJHP4BDFGMXP5SJXHX3GNS7X4T, shoulder is not at the location in this HIT: 2J1ENLVWJ5OR76RMD0ZYUWB7YCA1T2
+
+	second check: perhaps better, but still several issues. Point missed, location not exact: 2P7JWKUDD8XO79JU60RBEUTOQAQBM3
+
+	mark occluded points as occluded: 2F4NCWYB49FBOYL8U2SJWNSTPPASO1, 22GHVI44OS2MH014KFQSJAP5V965ZF
+	mark visible points as visible: 2ZIOUQIHPCGLYJVSL4N55H0J9XY604 (right shoulder is marked as occluded but is visible)
+	hips are not marked at the correct location, right arm is not annotated: 28GNJ92NJKM21HFAQV8Y42GT9HX8DL
+
+
+worker: A1CV8APDA7Y2PI, num_hits: 50, num_accept: 50
+	good :)
+
+	improved - on Ahmeds data
+
+	waiting Email repsonse
+	withdraw qualification if does not imporove
+
+	hips are not quite right in sideview, missing hips
+
+	pretty good, but spotted error in hip annotation (point too far) and a couple of other mistakes
+	good work
+	
+
+worker: AU2B2ZZW293DD, num_hits: 36, num_accept: 36
+	good work
+
+worker: A3TB86WNQ9RPQL, num_hits: 34, num_accept: 34
+	good work
+
+worker: A37G9LCQCQPOQO, num_hits: 30, num_accept: 30
+	good work
+
+worker: A2SU355QU0UYVL, num_hits: 28, num_accept: 28
+	good work
+
+worker: A111NR11IMS683, num_hits: 26, num_accept: 26
+	good work
+
+worker: A3QZTGWT7D7XPM, num_hits: 26, num_accept: 26
+	good work
+
+worker: A3G85CNRNCCK95, num_hits: 21, num_accept: 21
+	good work, occluded poitns are labeled 
+
+	looks good, some points not marked as occluded
+	
+
+	
+
+worker: A2F4YAGEXDSR0, num_hits: 19, num_accept: 19
+	good work
+
+worker: A2JMSI8FW5KF4M, num_hits: 19, num_accept: 19
+	good work
+
+worker: A3FPQGM967TJER, num_hits: 18, num_accept: 18
+	withdraw qualification
+
+	points are still off hence -> puffff...
+
+	ok, but point placement is a bit off, e.g. points are marking tip of the knee instead of knee joint (see hint message)
+
+worker: AWQA4ZFWKMCA9, num_hits: 18, num_accept: 18
+	good, one image is a bit incorrect but it was a difficult image
+
+worker: AXBQDARQ2VEOU, num_hits: 13, num_accept: 12
+	ok, some points missing in a couple of images
+
+worker: A3FIWSZ4U54TKX, num_hits: 11, num_accept: 11
+	good work
+	good work
+	
+worker: A2K4RT21DVY9AK, num_hits: 10, num_accept: 10
+	good work, a few ponits off - probably in the beginning
+
+worker: A1Z61FGSEBPA6D, num_hits: 9, num_accept: 9
+	qualification will be withdrawn
+
+	withdraw qualification next time? 
+
+	AGAIN, shoulder tips, hips on the side: e.g 22XQ0ONNVRH3GNH0BHIBF6NVT25VMS
+
+	ok, BUT really problematic placement of shoulder and elbow and hip points - annotates tips not joints
+	this is particularly visible on this hit 2MX3Q0JG5TYOJIPP850FHSSS1BDFJ5
+			
+worker: A36UH6XGNWSRRP, num_hits: 9, num_accept: 9
+	good work
+	good work
+	good work
+
+worker: A3LTCJRLT895T4, num_hits: 9, num_accept: 8
+	ok, hips might be a problem - check again
+
+worker: AFN23FAU0NXGY, num_hits: 8, num_accept: 8
+	good work
+
+worker: A2O0Q31A1VUR9J, num_hits: 6, num_accept: 6
+	looks ok, but incorrectly labeled ankle as occluded 
+	
+	ok, but need more images to check 
+
+worker: A3ARVCNUDEKWOC, num_hits: 6, num_accept: 6
+	should write back.
+
+	again, hips are consistently not annotated in some images, e.g. 28YNTBJ3MMDZ1LIYK7TKPB9MXKPXB0			
+
+	pretty good, also many hits done, minor thing: 
+		2HJ1K274J79MM2ZS5OV62XFCXIGEGH - did not annotate hips, but they are inside the image, also a few other images
+
+	ok, check again when more images are available
+
+worker: AHN6EHPD7LRNF, num_hits: 6, num_accept: 6
+	good work
+
+	ok, check again when more images are available	
+	looks good, check again
+
+
+worker: A2KEOU752LUBZC, num_hits: 5, num_accept: 5
+	discovered occasional glitches (missed keypoints), wrote email
+
+	looks good :) but few hits done
+
+	12.10.2013
+		ok, but few tasks, check again
+		mistake: missed keypoint 
+
+	bad mistake, mixed keypoints
+
+	ok, but misplaced knee markers: 2JVIPDOBDDPALPPBRE485MB3AQBC1V
+
+	ok, check again when more images are available	 
+	
+worker: A30M7MYW1BHQN1, num_hits: 5, num_accept: 5
+
+	ok, some problems with point locations, need more images to tell
+	same again, need more images
+
+	still a problem, elbows marked on the side: 26AI2KYEPLSR3BDCJ7NJBOAHAVBOUB
+
+worker: A3VETGL4OCTWD5, num_hits: 5, num_accept: 5
+	good work :)
+
+	ok, check again when more images are available	 
+	
+worker: AFGR3DTYF8MAL, num_hits: 5, num_accept: 5
+	ok, check again when more images are available		
+
+worker: APLQSM4J9E6LR, num_hits: 5, num_accept: 5
+	good work
+
+	ok, check again when more images are available		
+	looks good, minor thing: forgot wrist in this HIT: 2XO7D1X3V0FMWIHBZK51U7PK4NXDKR
+
+worker: ASXCGINLWHY1O, num_hits: 5, num_accept: 5
+	good work
+
+	ok, check again when more images are available		
+	looks ok, again few too images to tell
+	
+	good work
+
+
+
+
+A11J9DMMK3J8IY
+	
+
+	wrote email
+
+	forgot to annotate hips x 2
+	forgot elbow point
+	incorrect location of occluded point
+
+	in general: locations are good :)
+
+A12LUW5L8MK6XB
+	12.10.2013 
+		   error in annolist_noeval.al
+		   another error, another error, another error 
+
+		   could not communicate with the worker -> withdraw the qualification
+
+A1A47MH27PGXF3
+A1OEKDS070RD3Q
+***	few images, several mistakes, missing hip in 2N6Q1SNQQ7Q836YSNL3NZ12TAEHS8X, and 2LOOQ1SNQQ7S2DTWYRBCVR12DST7R2, hip slightly off in 27ZM8JIA0RYPFFVEGLD0DBMJDWY50M
+A1OKNQ2JEXW34Q
+
+A1PYMROZ75S4FW
+	Kristina
+
+	good work :) also many HITs done
+	good work :)
+	good work :)
+
+
+A1QC4NSUUDZZX6
+	
+
+	wrote email
+
+	completely wrong point locations, 
+
+
+A1WHS2GHOR9VRT
+A1XR97XSHB17AB
+A1ZJKOXQ9VW1PH
+	Steve
+
+	very good :)
+
+	again many images annotated and good work :)
+	again good work :)
+	again good work, also lots of work done
+	good work
+	
+A230VUDYOCRZ4N
+A234WZ4KX8IW07
+	good :)
+
+	improved on Ahmed's data
+
+	give him a bit more time to respond 26. Aug
+
+	withdraw qualification if no response, 
+
+	hmm.. annotations of hips are not good any more
+
+	good work
+
+A25UFF6UC1OU81
+	good work
+	good work
+	good work
+
+A27IABVBUZ9X8Z
+A2AANUSO2K9X48
+A2CNJVQPMJ302J
+
+A2EKPA2DR5VSA8
+	good work :)
+	good work again
+	good work, also lots of HITS done
+	
+A2ELUC3YKQAJ92
+	good work :)
+
+A2F7D8EOTB663
+A2I3RUSL28JKA6
+A2I3Y0L38HMQLZ
+
+worker: A2JVJ7J2MVGW9S, num_hits: 13, num_accept: 12
+	hmm... was submitting a large number (318) of empty annotations on the broken HITs (I forgot to copy images to bikini)
+			
+	good work
+	good work
+	good work :)
+	ok, found one glitch, but otherwise good
+	good work
+
+A2K3X4CA37XPFP
+	good work, few images though
+A2PYZOYSTXFCBZ
+A2RK31USWE0DBX
+A30MLBCTI3OWIR
+	good, in a few images hips are at the side of the body, not at the "hip joint", e.g. 26ZIT3HVWAVMECVEGRT1F2Z9TSVMEC
+	looks better in 1304_b2, check again
+
+A33UH6JW6H9ROD
+A3B0AB2C9SIHN
+	granted qualification again (after email?), reasonable work, check again
+
+	yes, qualification will be withdrawn 
+
+	withdraw qualification?
+
+	some images are still problematic: e.g. hips are off in this HIT: 
+
+	has problems with shoulder and hip joints, e.g. 2ELV0FK0COK4FKUD4QBKHLRWQQDIPD
+	seems to got better in 1304_b2, check again
+	good work, definitely got better
+
+A3FIWSZ4U54TKX
+	good work
+	good work		
+
+A3HTLXAPOBCVVO
+A3I546VTF7B6YX
+	good work
+	good work
+
+A3IZU4CXRW2FJ3
+A3LVKCEF8PO520
+A3PPCEDYR2EB22
+A3SKQPPOKCZU88
+	Karthikeyan
+
+	few HITs need more to test
+
+	ok, minor issues with loclization: hips in 2H3WSBRI8IUDY4N05K8S1LB35NGF30, knee in 2DKGTP9RA7S7SSUX6ZJON70J64MRWE
+
+	ok, minor things: did not annotate left ankle in 2NORLPHIT3HXSGOBF7TNRQ21RJLIAZ, did not annotate eyes and nose in 2YGW2GTP9RA9OBPDY70Y0OF7K08PUU
+	
+A3VHOSQ3AY6NT8
+A4Y8HWKCF1U6G
+	good work :)
+	
+	looks ok, but found a couple mistakes (e.g. legs too short, missing point on elbow)
+
+	looks ok, problematic occluded points labeling (sometimes visible marked as occluded) 2N9LPHIT3HVY61D933EJY217MMABJQ, 2KLFDEY5COW2HMKQ093RNLC6FAV3UN
+
+	overall good, in the sideview hip joints are not centered with respect to the limb, marked as if they would be at the front surface of the person, e.g. 2YXL42J1LY5A7DVYJ19GNKHDL8CP45
+	looks ok, but the knee point is at the tip, not centered on the joint: HITID 2RIRYNJ92NJMI6Y2JKKUPYW2071B6D
+
+	found crappy annotation
+
+A79CHO3NW2IPO
+	good work
+	ok, but too few images to really tell 
+
+A8TOWP2USXJUF
+A9IGTAK087DB9
+	good, in one image knees are not annotated, 2YWCWA6X3YOE8LT3M6BXXTIN2KBONI 
+
+AC5LU9TF9CTK9
+	good work :)
+
+	next time: withdraw qualification if results not good 
+
+	bad mistake, hands not labeled: 2JGU98JHSTLDZRT68K0IWBJE3EFEQK, shoulders not labeled: 20I11K274J7BGWPXY9E4EUXFW05DFW, wrist not at the correct location: 2KLFDEY5COW2HMKQ093RNLC6FAW3UO, 
+	    misplaced points: 2CO6RLPHIT3JR23MHJX2VJQ2LU49HA
+
+	good work (check again)
+
+	check again, looks good, in a few images hips are a bit off (e.g. too low)
+	hips are still a bit off, e.g. too low in 2C18EBDPGFL8RIINWAINLWIOF38H2Y and 2B8IHPCGJ2D4XUWN2Y80RPPS24093B
+	
+
+
+ACBII8A4LM01Y
+AOJJKHK2TVFPC
+APAYJAW26L8TW
+
+APLQSM4J9E6LR
+	good work
+	good work
+
+APZXUVM2ATHN5
+ARZOM5UR9E5G0
+AU73GKAZTNTGV
+AW0K78T4I2T72
+AWPI9DMI5PWLS
+AXVPI6O1B3DW
+AYQWBIUVDPBXK
