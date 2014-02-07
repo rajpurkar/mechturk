@@ -122,6 +122,8 @@ worker: AFN23FAU0NXGY, num_hits: 8, num_accept: 8
 	good work
 
 worker: A2O0Q31A1VUR9J, num_hits: 6, num_accept: 6
+	cars: good work
+	
 	looks ok, but incorrectly labeled ankle as occluded 
 	
 	ok, but need more images to check 
@@ -159,6 +161,8 @@ worker: A2KEOU752LUBZC, num_hits: 5, num_accept: 5
 	ok, check again when more images are available	 
 	
 worker: A30M7MYW1BHQN1, num_hits: 5, num_accept: 5
+
+	cars: good work
 
 	ok, some problems with point locations, need more images to tell
 	same again, need more images
@@ -243,6 +247,8 @@ A1ZJKOXQ9VW1PH
 	
 A230VUDYOCRZ4N
 A234WZ4KX8IW07
+	cars: missed some cars, will write email about occluded cars 
+	
 	good :)
 
 	improved on Ahmed's data
@@ -270,6 +276,8 @@ A2EKPA2DR5VSA8
 	good work, also lots of HITS done
 	
 A2ELUC3YKQAJ92
+	cars: good work, will write about occluded cars
+
 	good work :)
 
 A2F7D8EOTB663
@@ -277,6 +285,8 @@ A2I3RUSL28JKA6
 A2I3Y0L38HMQLZ
 
 worker: A2JVJ7J2MVGW9S, num_hits: 13, num_accept: 12
+	cars: pretty good, will write email about annotating occluded cars
+
 	hmm... was submitting a large number (318) of empty annotations on the broken HITs (I forgot to copy images to bikini)
 			
 	good work

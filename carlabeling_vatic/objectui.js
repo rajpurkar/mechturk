@@ -150,7 +150,23 @@ function TrackObjectUI(button, container, videoframe, job, player, tracks)
 	// MA
         //var html = "<p>In this video, please track all of these objects:</p>";
 
-        var html = "<p>Keyboard shortcuts: <font color='blue'>'n'</font> - new vehicle, <font color='blue'>'t'</font> - toggle between occluded/visible state, <font color='blue'>'d'</font> - delete vehicle.</p>";
+	var num_hints = 4;
+	var hintidx = Math.floor(Math.random()*num_hints);
+        var html = "<p align='center'>Keyboard shortcuts: <font color='blue'>'n'</font> - new vehicle, <font color='blue'>'t'</font> - toggle between occluded/visible state, <font color='blue'>'d'</font> - delete vehicle.</p><br>";
+
+	if (hintidx == 0) {
+            html += "<p align='center'><font color='green'>Hint</font>: labeling boxes should tightly enclose the vehicle: <img width = '200px' src='label_cars_instructions/box_precise.png'/><img width = '200px' src='label_cars_instructions/box_loose.png'/></p>";
+	}
+	else if (hintidx == 1) {
+	    html += "<p align='center'><font color='green'>Hint</font>: labeling box for the partially visible vehicle should include the whole vehicle, not just the visible part: <img width = '200px' src='label_cars_instructions/occluded_all.png'/><img width = '200px' src='label_cars_instructions/occluded_visible_only.png'/></p>";
+	}
+	else if (hintidx == 2) {
+	    html += "<p align='center'><font color='green'>Hint</font>: you may skip barely visible vehicles at a distance, but you should label all other vehicles: <img width = '200px' src='label_cars_instructions/missed_none.png'/><img width = '200px' src='label_cars_instructions/missed_car.png'/></p>";
+	}
+	else if (hintidx == 3) {
+	    html += "<p align='center'><font color='green'>Hint</font>: label all types of vehicles including motorcycles, buses and trucks: <img width = '200px' src='label_cars_instructions/type6.jpeg'/><img width = '200px' src='label_cars_instructions/type1.jpeg'/></p>";
+	}
+
         //html += "<p>In this image, please label all of these objects:</p>";
 
         // html += "<ul>";
