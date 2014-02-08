@@ -1,0 +1,17 @@
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-85N-split_0_85N_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-101S-split_0_101S_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-101N-split_0_101N_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-101S-split_0_101S_e1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-1N-split_0_1N_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-101S-split_0_101S_f1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-101S-split_0_101S_d1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-101S-split_0_101S_c1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-101N-split_0_101N_d1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-alternate_route-split_0_alternate_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-101N-split_0_101N_b1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-alternate_route-split_0_alternate_b1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-101N-split_0_101N_c1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-183W-split_0_183W_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-101S-split_0_101S_b1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-85N-split_0_85N_b1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-24-101-101S-split_0_101S_g1

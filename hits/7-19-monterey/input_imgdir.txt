@@ -1,0 +1,15 @@
+/local/IMAGES/driving_data_twangcat/all_extracted/7-19-monterey-north-split_0_85N_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-19-monterey-south-split_0_17S_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-19-monterey-north-split_0_1N_c1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-19-monterey-south-split_0_280S_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-19-monterey-north-split_0_1N_b1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-19-monterey-north-split_0_17N_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-19-monterey-south-split_0_1S_b1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-19-monterey-north-split_0_1N_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-19-monterey-north-split_0_17N_b1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-19-monterey-south-split_0_1S_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-19-monterey-north-split_0_1N_d1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-19-monterey-south-split_0_1S_c1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-19-monterey-south-split_0_85S_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-19-monterey-north-split_0_280N_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/7-19-monterey-south-split_0_17S_b1
