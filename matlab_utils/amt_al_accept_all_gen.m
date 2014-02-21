@@ -50,70 +50,77 @@ function amt_al_accept_all_gen(annolist, amt_results)
 
   for aidx = 1:length(annolist)
 
-    if length(annolist(aidx).annorect) == 0
-      continue;
-    end
+    % if length(annolist(aidx).annorect) == 0
+    %   continue;
+    % end
 
     do_print_imgname = true;
     total_rects = total_rects + length(annolist(aidx).annorect);
 
     % test that all annorects have same 'assignmentid'
-
-    for ridx = 2:length(annolist(aidx).annorect)
-      assert(strcmp(annolist(aidx).annorect(1).assignmentid, annolist(aidx).annorect(ridx).assignmentid) == 1);
-    end
+    % for ridx = 2:length(annolist(aidx).annorect)
+    %   assert(strcmp(annolist(aidx).annorect(1).assignmentid, annolist(aidx).annorect(ridx).assignmentid) == 1);
+    % end
 
     ridx = 1;
 
     %for ridx = 1:length(annolist(aidx).annorect)
-      assert(~isempty(strtrim(annolist(aidx).annorect(ridx).assignmentid)));
+    %assert(~isempty(strtrim(annolist(aidx).annorect(ridx).assignmentid)));
+    assert(~isempty(strtrim(annolist(aidx).assignmentid)));
 
-      if true %isfield(annolist(aidx).annorect(ridx), 'num_ok') && isfield(annolist(aidx).annorect(ridx), 'num_ok_visible')
+      % if true %isfield(annolist(aidx).annorect(ridx), 'num_ok') && isfield(annolist(aidx).annorect(ridx), 'num_ok_visible')
 
-	if true % amt_annorect_check_accept(annolist(aidx).annorect(ridx))
-	  fprintf(fid_accept, '%s\t"thank you for your work"\n', annolist(aidx).annorect(ridx).assignmentid);
+      % 	if true % amt_annorect_check_accept(annolist(aidx).annorect(ridx))
+      %fprintf(fid_accept, '%s\t"thank you for your work"\n', annolist(aidx).annorect(ridx).assignmentid);
+      fprintf(fid_accept, '%s\t"thank you for your work"\n', annolist(aidx).assignmentid);
 
-	  accepted_assignments(annolist(aidx).annorect(ridx).assignmentid) = 1;
+	  accepted_assignments(annolist(aidx).assignmentid) = 1;
 	  total_accept = total_accept + 1;
 
 	  next_aidx = length(annolist_accept) + 1;
 	  annolist_accept(next_aidx).image.name = annolist(aidx).image.name;
-	  annolist_accept(next_aidx).annorect = annolist(aidx).annorect(ridx);
 
-	else
-	  extended_reject_comment = ['number or correct keypoints: ' num2str(annolist(aidx).annorect(ridx).num_ok_visible) '/' ...
-		    num2str(annolist(aidx).annorect(ridx).num_gt_visible) ', ' ...
-		    num2str(annolist(aidx).annorect(ridx).num_ok) '/' num2str(annolist(aidx).annorect(ridx).num_gt_inside) ', not enough correct keypoints'];
-
-	  if do_print_imgname 
-	    fprintf('%d, %s\n', aidx, annolist(aidx).image.name);
-	    do_print_imgname = false;
+	  if length(annolist(aidx).annorect) > 0
+	    annolist_accept(next_aidx).annorect = annolist(aidx).annorect(ridx);
 	  end
+	  
+	% end
 
-	  reject_comment = ['number or correct keypoints: ' num2str(annolist(aidx).annorect(ridx).num_ok) ', not enough correct keypoints, sorry'];
+	
+      % 	else
+      % 	  extended_reject_comment = ['number or correct keypoints: ' num2str(annolist(aidx).annorect(ridx).num_ok_visible) '/' ...
+      % 		    num2str(annolist(aidx).annorect(ridx).num_gt_visible) ', ' ...
+      % 		    num2str(annolist(aidx).annorect(ridx).num_ok) '/' num2str(annolist(aidx).annorect(ridx).num_gt_inside) ', not enough correct keypoints'];
 
-	  fprintf('%s\n', reject_comment);
-		   %fprintf('%s\n', extended_reject_comment);
+      % 	  if do_print_imgname 
+      % 	    fprintf('%d, %s\n', aidx, annolist(aidx).image.name);
+      % 	    do_print_imgname = false;
+      % 	  end
 
-		   fprintf(fid_reject, '%s\t"%s"\n', annolist(aidx).annorect(ridx).assignmentid, reject_comment);
+      % 	  reject_comment = ['number or correct keypoints: ' num2str(annolist(aidx).annorect(ridx).num_ok) ', not enough correct keypoints, sorry'];
 
-		   rejected_assignments(annolist(aidx).annorect(ridx).assignmentid) = 1;
-		   total_reject = total_reject + 1;
+      % 	  fprintf('%s\n', reject_comment);
+      % 		   %fprintf('%s\n', extended_reject_comment);
 
-		   next_aidx = length(annolist_reject) + 1;
-		   annolist_reject(next_aidx).image.name = annolist(aidx).image.name;
-		   annolist_reject(next_aidx).annorect = annolist(aidx).annorect(ridx);
-		   annolist_reject(next_aidx).annorect.rc = reject_comment;
+      % 		   fprintf(fid_reject, '%s\t"%s"\n', annolist(aidx).annorect(ridx).assignmentid, reject_comment);
 
-	end
+      % 		   rejected_assignments(annolist(aidx).annorect(ridx).assignmentid) = 1;
+      % 		   total_reject = total_reject + 1;
 
-      else
-	num_could_not_eval = num_could_not_eval + 1;
+      % 		   next_aidx = length(annolist_reject) + 1;
+      % 		   annolist_reject(next_aidx).image.name = annolist(aidx).image.name;
+      % 		   annolist_reject(next_aidx).annorect = annolist(aidx).annorect(ridx);
+      % 		   annolist_reject(next_aidx).annorect.rc = reject_comment;
 
-	next_aidx = length(annolist_noeval) + 1;
-	annolist_noeval(next_aidx).image.name = annolist(aidx).image.name;
-	annolist_noeval(next_aidx).annorect = annolist(aidx).annorect(ridx);
-      end
+      % 	end
+
+      % else
+      % 	num_could_not_eval = num_could_not_eval + 1;
+
+      % 	next_aidx = length(annolist_noeval) + 1;
+      % 	annolist_noeval(next_aidx).image.name = annolist(aidx).image.name;
+      % 	annolist_noeval(next_aidx).annorect = annolist(aidx).annorect(ridx);
+      % end
 
     %end % worker outputs
   end % images

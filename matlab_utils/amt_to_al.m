@@ -369,14 +369,19 @@ for aidx = 2:size(A, 1)
                 
                 assert(mod(length(tokens) - 2, 6) == 0);
                 num_rects  = floor((length(tokens) - 1) / 6);
+
+		annolist(hit_aidx).hitid = strtrim(A{aidx, column_by_name(HITID_STR)});
+		annolist(hit_aidx).assignmentid = strtrim(A{aidx, column_by_name(ASSIGNMENTID_STR)});
+		annolist(hit_aidx).workerid = strtrim(A{aidx, column_by_name(WORKERID_STR)});
                 
                 for hit_ridx = 1:num_rects
                     annolist(hit_aidx).annorect(hit_ridx).amt_annotation_str = strtrim(A{aidx, column_by_name(ANNOTATION_STR)});
                     
+		    % MA: in car labeling these are per image, not per bounding box 
                     % also set other fields: workerId, comment, time, hitid
-                    annolist(hit_aidx).annorect(hit_ridx).hitid = strtrim(A{aidx, column_by_name(HITID_STR)});
-                    annolist(hit_aidx).annorect(hit_ridx).assignmentid = strtrim(A{aidx, column_by_name(ASSIGNMENTID_STR)});
-                    annolist(hit_aidx).annorect(hit_ridx).workerid = strtrim(A{aidx, column_by_name(WORKERID_STR)});
+                    %annolist(hit_aidx).annorect(hit_ridx).hitid = strtrim(A{aidx, column_by_name(HITID_STR)});
+                    %annolist(hit_aidx).annorect(hit_ridx).assignmentid = strtrim(A{aidx, column_by_name(ASSIGNMENTID_STR)});
+                    %annolist(hit_aidx).annorect(hit_ridx).workerid = strtrim(A{aidx, column_by_name(WORKERID_STR)});
                     
                     
                     annolist(hit_aidx).annorect(hit_ridx).x1 = round(str2num(tokens{6*(hit_ridx - 1) + 3}));
