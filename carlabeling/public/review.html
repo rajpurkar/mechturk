@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+        Remove this if you use the .htaccess -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+        <title>Review</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=yes">
+
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+        <style>
+			body, a, h1, h2, h3, h4, p {
+				font-family: 'Open Sans';
+			}
+
+			body {
+				padding-top: 30px;
+			}
+
+        </style>
+    </head>
+
+    <body>
+        <section id = "header-section">
+            <div class ="container">
+                <div class= "row">
+                    <div id = "left" class="col-md-6">
+                        <canvas id="myCanvas" width="400" height="500">
+                            <your>
+                                browser does not support canvas, which is required for this
+                            </your>
+                            application. Please download the latest version of a(href='https://www.google.com/intl/en/chrome/browser/') Google Chrome
+                        </canvas>
+                        <div>
+                            <button id="bt" type="button">
+                                Accept
+                            </button>
+                            <button id="bt" type="button">
+                                Reject
+                            </button>
+
+                        </div>
+                    </div>
+                    <div id = "right" class="col-md-6">
+                        <form class="form-horizontal" id = "feedback">
+                            <fieldset>
+
+                                <!-- Form Name -->
+                                <legend>
+                                    Feedback
+                                </legend>
+
+                                <!-- Text input-->
+                                <div class="control-group">
+                                    <label class="control-label" for="subject">Subject</label>
+                                    <div class="controls">
+                                        <input id="subject" name="subject" type="text" placeholder="" class="input-xlarge" required="">
+
+                                    </div>
+                                </div>
+
+                                <!-- Textarea -->
+                                <div class="control-group">
+                                    <label class="control-label" for="comments">Comments</label>
+                                    <div class="controls">
+                                        <textarea id="comments" name="comments"  required=""></textarea>
+                                    </div>
+                                </div>
+                                <!-- Button -->
+                                <div class="control-group">
+                                    <label class="control-label" for="submitfeed"></label>
+                                    <div class="controls">
+                                        <button id="submitfeed" name="submitfeed" class="btn btn-success" type="submit">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="javascripts/jquery-1.8.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="javascripts/classes.js"></script>
+    <script src="javascripts/helper.js"></script>
+    <script src="javascripts/main-rev.js"></script>
+    <script>
+		/* in the url there must be the image location, the list of markings, and the worker id*/
+		var marking = JSON.parse(decode(gup('marks')));
+		console.log(marking);
+		console.log(encodeURIComponent('[{"x":120,"y":240},{"x":360,"y":480}]'));
+		$(canvas).width($("#left").width());
+		$("#feedback").submit(function() {
+			console.log("Submitted");
+			return false;
+		});
+		console.log(marking[0].x)
+		context.beginPath();
+		context.rect(marking[0].x, marking[0].y, marking[1].x - marking[0].x, marking[1].y - marking[0].y);
+		context.stroke();
+		context.closePath();
+		$("#message").text("Now select the top-left of another car. Or press submit to finish.");
+		addMarkToCollection(mark);
+
+		/*
+		 * Format of request to amazon
+		 * https://mechanicalturk.amazonaws.com/?Service=AWSMechanicalTurkRequester
+		 &AWSAccessKeyId=[the Requester's Access Key ID]
+		 &Version=2012-03-25
+		 &Operation=NotifyWorkers
+		 &Signature=[signature for this request]
+		 &Timestamp=[your system's local time]
+		 &Subject=Thank%20you
+		 &MessageText=Hello!%20Just%20wanted%20to%20say%20thank%20you...
+		 &WorkerId.1=AZ3123EXAMPLE
+		 &WorkerId.2=AZ3456EXAMPLE
+		 &WorkerId.3=AZ3789EXAMPLE
+		 */
+
+		*/
+
+    </script>
+</html>
