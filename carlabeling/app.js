@@ -31,6 +31,8 @@ app.get('/review', function(req, res){
 	res.send("review.html");
 });
 
+app.post('/feedback', index.handleFeedback)
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
