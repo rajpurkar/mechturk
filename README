@@ -1,0 +1,11 @@
+useful scripts for creating HIT batches: 
+
+
+* extract_data.sh
+
+* copy_data_s3.sh
+  ./copy_data_s3.sh `find /local/IMAGES/driving_data_twangcat/all_extracted -mindepth 1 -maxdepth 1 -name "7-18-101-*" -type l`
+
+* mturk_make_input.sh
+  ./mturk_make_input.sh ../hits/7-19-monterey `find /local/IMAGES/driving_data_twangcat/all_extracted -mindepth 1 -maxdepth 1 -name "7-19-monterey-*" -type l`
+  ./mturk_make_input.sh ../hits/7-25-bay `find /local/IMAGES/driving_data_twangcat/all_extracted -mindepth 1 -maxdepth 1 -name "north-*" -or -name "south-*" -type l`

@@ -150,14 +150,31 @@ function TrackObjectUI(button, container, videoframe, job, player, tracks)
 	// MA
         //var html = "<p>In this video, please track all of these objects:</p>";
 
-        var html = "<p>In this image, please label all of these objects:</p>";
+	var num_hints = 4;
+	var hintidx = Math.floor(Math.random()*num_hints);
+        var html = "<p align='center'>Keyboard shortcuts: <font color='blue'>'n'</font> - new vehicle, <font color='blue'>'t'</font> - toggle between partially and fully visible state, <font color='blue'>'d'</font> - delete vehicle.</p><br>";
 
-        html += "<ul>";
-        for (var i in this.job.labels)
-        {
-            html += "<li>" + this.job.labels[i] + "</li>";
-        }
-        html += "</ul>";
+	if (hintidx == 0) {
+            html += "<p align='center'><font color='green'>Hint</font>: labeling boxes should tightly enclose the vehicle: <img width = '200px' src='label_cars_instructions/box_precise.png'/><img width = '200px' src='label_cars_instructions/box_loose.png'/></p>";
+	}
+	else if (hintidx == 1) {
+	    html += "<p align='center'><font color='green'>Hint</font>: labeling box for the partially visible vehicle should include the whole vehicle, not just the visible part: <img width = '200px' src='label_cars_instructions/occluded_all.png'/><img width = '200px' src='label_cars_instructions/occluded_visible_only.png'/></p>";
+	}
+	else if (hintidx == 2) {
+	    html += "<p align='center'><font color='green'>Hint</font>: you may skip barely visible vehicles at a distance, but you should label all other vehicles: <img width = '200px' src='label_cars_instructions/missed_none.png'/><img width = '200px' src='label_cars_instructions/missed_car.png'/></p>";
+	}
+	else if (hintidx == 3) {
+	    html += "<p align='center'><font color='green'>Hint</font>: label all types of vehicles including motorcycles, buses and trucks: <img width = '200px' src='label_cars_instructions/type6.jpeg'/><img width = '200px' src='label_cars_instructions/type1.jpeg'/></p>";
+	}
+
+        //html += "<p>In this image, please label all of these objects:</p>";
+
+        // html += "<ul>";
+        // for (var i in this.job.labels)
+        // {
+        //     html += "<li>" + this.job.labels[i] + "</li>";
+        // }
+        // html += "</ul>";
 
         this.instructions = $(html).appendTo(this.container);
     }
@@ -414,9 +431,10 @@ function TrackObject(job, player, container, color)
 
     this.setupdetails = function()
     {
-        this.details.append("<input type='checkbox' id='trackobject" + this.id + "lost'> <label for='trackobject" + this.id + "lost'>Outside of view frame</label><br>");
+	// MA
+        //this.details.append("<input type='checkbox' id='trackobject" + this.id + "lost'> <label for='trackobject" + this.id + "lost'>Outside of view frame</label><br>");
 
-        this.details.append("<input type='checkbox' id='trackobject" + this.id + "occluded'> <label for='trackobject" + this.id + "occluded'>Occluded or obstructed</label><br>");
+        this.details.append("<input type='checkbox' id='trackobject" + this.id + "occluded'> <label for='trackobject" + this.id + "occluded'>Occluded or truncated</label><br>");
 
         for (var i in this.job.attributes[this.track.label])
         {

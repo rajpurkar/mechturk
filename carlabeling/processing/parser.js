@@ -67,6 +67,8 @@ fs.readFile(filename, 'UTF-8', function(err, csv) {
     });
 });
 
+
+//TODO replace the 4 with 6
 function processResults(results){
     results = results.split(",");
     var rects = results.slice(1);

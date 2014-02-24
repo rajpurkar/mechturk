@@ -1,0 +1,17 @@
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-north-split_0_280N_c1
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-north-split_0_goldengate_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-north-split_0_goldengate_b1
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-south-split_0_1S_c1
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-south-split_0_1S_d1
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-north-split_0_1N_c1
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-north-split_0_280N_b1
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-north-split_0_1N_e1
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-south-split_0_1S_b1
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-south-split_0_101S_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-north-split_0_1N_d1
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-north-split_0_1N_b1
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-north-split_0_280N_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-south-split_0_1S_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-south-split_0_280S_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-north-split_0_1N_a1
+/local/IMAGES/driving_data_twangcat/all_extracted/8-13-marin-south-split_0_1S_e1

@@ -1,0 +1,18 @@
+[06.02.2014 14:13:28][AnnoTool][1] -> AnnoTool Version 0.3.14 is starting up, running on Linux System
+[06.02.2014 14:13:28][AnnoTool][1] -> Using Qt rendering engine.
+[06.02.2014 14:13:28][AnnoTool][1] -> Loading IDL annotation datasets from [/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/7-18-101/results_by_worker_7-18-101/2030_A1PYMROZ75S4FW.al].
+[06.02.2014 14:13:28][AnnoTool][1] -> Loaded 2030 IDL annotation datasets.
+[06.02.2014 14:13:28][AnnoTool][1] -> Loaded project '2030_A1PYMROZ75S4FW.al': 0 classes, 2030 AnnotationFiles.
+[06.02.2014 14:13:44][AnnoTool][1] -> AnnoTool is shutting down.
+[06.02.2014 14:33:11][AnnoTool][1] -> AnnoTool Version 0.3.14 is starting up, running on Linux System
+[06.02.2014 14:33:11][AnnoTool][1] -> Using Qt rendering engine.
+[06.02.2014 14:33:11][AnnoTool][1] -> Loading IDL annotation datasets from [/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/7-18-101/results_by_worker_7-18-101/0419_A1PYMROZ75S4FW.al].
+[06.02.2014 14:33:11][AnnoTool][1] -> Loaded 419 IDL annotation datasets.
+[06.02.2014 14:33:11][AnnoTool][1] -> Loaded project '0419_A1PYMROZ75S4FW.al': 0 classes, 419 AnnotationFiles.
+[06.02.2014 14:34:42][AnnoTool][1] -> AnnoTool is shutting down.
+[06.02.2014 14:34:55][AnnoTool][1] -> AnnoTool Version 0.3.14 is starting up, running on Linux System
+[06.02.2014 14:34:55][AnnoTool][1] -> Using Qt rendering engine.
+[06.02.2014 14:34:56][AnnoTool][1] -> Loading IDL annotation datasets from [/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/7-18-101/results_by_worker_7-18-101/0419_A1PYMROZ75S4FW.al].
+[06.02.2014 14:34:56][AnnoTool][1] -> Loaded 419 IDL annotation datasets.
+[06.02.2014 14:34:56][AnnoTool][1] -> Loaded project '0419_A1PYMROZ75S4FW.al': 0 classes, 419 AnnotationFiles.
+[06.02.2014 14:35:00][AnnoTool][1] -> AnnoTool is shutting down.
