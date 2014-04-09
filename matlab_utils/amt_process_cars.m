@@ -8,8 +8,10 @@ function amt_process_cars(amt_results);
   %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/7-24-101/7-24-101.results';
   %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/7-25-bay/7-25-bay.results';
   %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/8-13-marin/8-13-marin.results';
-  amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/8-14-101/8-14-101.results';
+  %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/8-14-101/8-14-101.results';
   %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/8-15-tracy-gilroy/8-15-tracy-gilroy.results';
+
+  amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-2-14-monterey/4-2-14-monterey.results';
     
   % extract annotations from amt results table
   annolist_all_workers = amt_to_al(base_img_dir, amt_results);

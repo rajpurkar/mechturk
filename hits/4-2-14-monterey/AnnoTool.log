@@ -1,0 +1,6 @@
+[05.04.2014 22:46:09][AnnoTool][1] -> AnnoTool Version 0.3.14 is starting up, running on Linux System
+[05.04.2014 22:46:10][AnnoTool][1] -> Using Qt rendering engine.
+[05.04.2014 22:46:10][AnnoTool][1] -> Loading IDL annotation datasets from [/local/IMAGES/driving_data_sameep/all_extracted/4-2-14-monterey.al].
+[05.04.2014 22:46:10][AnnoTool][1] -> Loaded 1079 IDL annotation datasets.
+[05.04.2014 22:46:10][AnnoTool][1] -> Loaded project '4-2-14-monterey.al': 0 classes, 1079 AnnotationFiles.
+[05.04.2014 22:46:38][AnnoTool][1] -> AnnoTool is shutting down.

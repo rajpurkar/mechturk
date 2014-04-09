@@ -12,7 +12,11 @@ echo "VIDEOLIST: $VIDEOLIST"
 
 for VIDNAME in `cat $VIDEOLIST`; do
     
-    VIDFILE=$VIDEO_DIR/$VIDNAME;
+    if [[ "$VIDNAME" = /* ]]; then 
+    	VIDFILE=$VIDNAME
+    else
+    	VIDFILE=$VIDEO_DIR/$VIDNAME;
+    fi
 
     if [[ $VIDNAME == \#* ]]; then
 	continue;
@@ -30,22 +34,29 @@ for VIDNAME in `cat $VIDEOLIST`; do
 	IMGPATH=`dirname $VIDNAME`; 
 	IMGNAME2=`basename $IMGPATH`;
 	IMGPATH=`dirname $IMGPATH`; 
-	IMGNAME3=`basename $IMGPATH`;
 
-	BASENAME=$IMGNAME3-$IMGNAME2-$IMGNAME1;
-	CURDIR=$EXTRACT_DIR/$IMGNAME3/$IMGNAME2/$BASENAME;
+	# twantcat
+	#IMGNAME3=`basename $IMGPATH`;
+	#BASENAME=$IMGNAME3-$IMGNAME2-$IMGNAME1;
+	#CURDIR=$EXTRACT_DIR/$IMGNAME3/$IMGNAME2/$BASENAME;
+
+	# q50-data
+	BASENAME=$IMGNAME2-$IMGNAME1;
+	CURDIR=$EXTRACT_DIR/$IMGNAME2/$BASENAME;
 
 	echo extracting to: $CURDIR;
 	mkdir -p $CURDIR;
 	
 	#ffmpeg -i $VIDFILE -qscale 3 $CURDIR/${BASENAME}_%04d.jpeg
+	ffmpeg -i $VIDFILE -qscale 3 $CURDIR/${BASENAME}_%06d.jpeg
 
 	# make a link in flat hierarchy for easier viewing/copying to S3
 	mkdir -p $EXTRACT_DIR/all_extracted
 	#ln -s $CURDIR $EXTRACT_DIR/all_extracted/
 
-	# make a relative link
-	ln -s ../$IMGNAME3/$IMGNAME2/$BASENAME $EXTRACT_DIR/all_extracted/$BASENAME
+	# make a relative link (need link that works after copying to the scail filesystem)
+	#ln -s ../$IMGNAME3/$IMGNAME2/$BASENAME $EXTRACT_DIR/all_extracted/$BASENAME
+	ln -s ../$IMGNAME2/$BASENAME $EXTRACT_DIR/all_extracted/$BASENAME
     fi
 
 done

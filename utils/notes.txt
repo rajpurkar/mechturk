@@ -1,1 +1,14 @@
+
+https://console.aws.amazon.com/s3/home?region=us-east-1
+https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:
+
+
+./mturk_make_input.sh ../hits/4-2-14-monterey  /local/IMAGES/driving_data_sameep/all_extracted/4-2-14-monterey-*1
+
+./mturk_make_input.sh ../hits/8-15-tracy-gilroy/  `find /local/IMAGES/driving_data_twangcat/all_extracted -mindepth 1 -maxdepth 1 -name "8-15-tracy-*" -type l`
+
 ./mturk_make_input.sh ../hits/7-16-sacramento  /local/IMAGES/driving_data_twangcat/all_extracted/7-16-sacramento-*
+
+list Q50 videos (split0, camera 1): 
+     find /afs/cs.stanford.edu/u/andriluka/mount/scail_group_deeplearning/driving_data/q50_data -maxdepth 2 -name "*split_0*1.avi"|sort -n
+
