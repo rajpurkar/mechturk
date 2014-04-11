@@ -1,6 +1,7 @@
 function amt_process_cars(amt_results);
 
-  base_img_dir = '/local/IMAGES/driving_data_twangcat/all_extracted';
+  %base_img_dir = '/local/IMAGES/driving_data_twangcat/all_extracted';
+  base_img_dir = '/local/IMAGES/driving_data_sameep/all_extracted';
 
   %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/7-16-sacramento/7-16-sacramento.results';
   %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/7-18-101/7-18-101.results';
@@ -10,8 +11,10 @@ function amt_process_cars(amt_results);
   %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/8-13-marin/8-13-marin.results';
   %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/8-14-101/8-14-101.results';
   %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/8-15-tracy-gilroy/8-15-tracy-gilroy.results';
+  %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-2-14-monterey/4-2-14-monterey.results';
+  %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-3-14-monterey/4-3-14-monterey.results';
 
-  amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-2-14-monterey/4-2-14-monterey.results';
+  amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-3-14-gilroy-cam2/4-3-14-gilroy-cam2.results';
     
   % extract annotations from amt results table
   annolist_all_workers = amt_to_al(base_img_dir, amt_results);
