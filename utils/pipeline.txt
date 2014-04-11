@@ -1,7 +1,12 @@
-	
+* check that AWS node and S3 are operational: 
+
+  https://console.aws.amazon.com/s3/home?region=us-east-1
+  https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:
+
+  note: later migrate to mtserve.stanford.edu	
 
 
-* edit path in "data_utils_init.sh"
+* edit path/parameters in "data_utils_init.sh"
 
 * extract data from videos
   find /afs/cs.stanford.edu/u/andriluka/mount/scail_group_deeplearning/driving_data/q50_data/4-9-14-concord -maxdepth 1 -name "split_0*1.avi" | sort -n > 4-9-cam1.txt
@@ -18,7 +23,6 @@
   older commands: 
           ./mturk_make_input.sh ../hits/7-19-monterey `find /local/IMAGES/driving_data_twangcat/all_extracted -mindepth 1 -maxdepth 1 -name "7-19-monterey-*" -type l`
   ./mturk_make_input.sh ../hits/7-25-bay `find /local/IMAGES/driving_data_twangcat/all_extracted -mindepth 1 -maxdepth 1 -name "north-*" -or -name "south-*" -type l`
-
 
 * submit: "run.sh <HITDIR>>
 
