@@ -382,14 +382,14 @@ for aidx = 2:size(A, 1)
                     %annolist(hit_aidx).annorect(hit_ridx).hitid = strtrim(A{aidx, column_by_name(HITID_STR)});
                     %annolist(hit_aidx).annorect(hit_ridx).assignmentid = strtrim(A{aidx, column_by_name(ASSIGNMENTID_STR)});
                     %annolist(hit_aidx).annorect(hit_ridx).workerid = strtrim(A{aidx, column_by_name(WORKERID_STR)});
-                    
-                    
+
                     annolist(hit_aidx).annorect(hit_ridx).x1 = round(str2num(tokens{6*(hit_ridx - 1) + 3}));
                     annolist(hit_aidx).annorect(hit_ridx).y1 = round(str2num(tokens{6*(hit_ridx - 1) + 4}));
                     annolist(hit_aidx).annorect(hit_ridx).x2 = round(str2num(tokens{6*(hit_ridx - 1) + 5}));
                     annolist(hit_aidx).annorect(hit_ridx).y2 = round(str2num(tokens{6*(hit_ridx - 1) + 6}));
                     
-                    annolist(hit_aidx).annorect(hit_ridx).silhouette.id = str2num(tokens{6*(hit_ridx - 1) + 7});
+                    %annolist(hit_aidx).annorect(hit_ridx).silhouette.id = str2num(tokens{6*(hit_ridx - 1) + 7});
+		    annolist(hit_aidx).annorect(hit_ridx).score = str2num(tokens{6*(hit_ridx - 1) + 7});
                 end
                 
             else

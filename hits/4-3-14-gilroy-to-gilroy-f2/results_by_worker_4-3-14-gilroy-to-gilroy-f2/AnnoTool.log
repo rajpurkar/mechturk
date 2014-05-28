@@ -1,0 +1,85 @@
+[20.04.2014 14:31:31][AnnoTool][1] -> AnnoTool Version 0.3.14 is starting up, running on Linux System
+[20.04.2014 14:31:31][AnnoTool][1] -> Using Qt rendering engine.
+[20.04.2014 14:31:31][AnnoTool][1] -> Loading IDL annotation datasets from [/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-3-14-gilroy-to-gilroy-f2/results_by_worker_4-3-14-gilroy-to-gilroy-f2/0100_ABVM2KJ7CRNZ0.al].
+[20.04.2014 14:31:31][AnnoTool][1] -> Loaded 100 IDL annotation datasets.
+[20.04.2014 14:31:32][AnnoTool][1] -> Loaded project '0100_ABVM2KJ7CRNZ0.al': 0 classes, 100 AnnotationFiles.
+[20.04.2014 14:32:12][AnnoTool][1] -> AnnoTool is shutting down.
+[20.04.2014 14:40:49][AnnoTool][1] -> AnnoTool Version 0.3.14 is starting up, running on Linux System
+[20.04.2014 14:40:49][AnnoTool][1] -> Using Qt rendering engine.
+[20.04.2014 14:40:49][AnnoTool][1] -> Loading IDL annotation datasets from [/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-3-14-gilroy-to-gilroy-f2/results_by_worker_4-3-14-gilroy-to-gilroy-f2/0059_A234WZ4KX8IW07.al].
+[20.04.2014 14:40:49][AnnoTool][1] -> Loaded 59 IDL annotation datasets.
+[20.04.2014 14:40:49][AnnoTool][1] -> Loaded project '0059_A234WZ4KX8IW07.al': 0 classes, 59 AnnotationFiles.
+[20.04.2014 14:41:52][AnnoTool][1] -> AnnoTool is shutting down.
+[20.04.2014 14:41:59][AnnoTool][1] -> AnnoTool Version 0.3.14 is starting up, running on Linux System
+[20.04.2014 14:41:59][AnnoTool][1] -> Using Qt rendering engine.
+[20.04.2014 14:41:59][AnnoTool][1] -> Loading IDL annotation datasets from [/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-3-14-gilroy-to-gilroy-f2/results_by_worker_4-3-14-gilroy-to-gilroy-f2/0022_A3FIWSZ4U54TKX.al].
+[20.04.2014 14:42:00][AnnoTool][1] -> Loaded 22 IDL annotation datasets.
+[20.04.2014 14:42:00][AnnoTool][1] -> Loaded project '0022_A3FIWSZ4U54TKX.al': 0 classes, 22 AnnotationFiles.
+[20.04.2014 14:43:39][AnnoTool][1] -> AnnoTool is shutting down.
+[20.04.2014 14:43:46][AnnoTool][1] -> AnnoTool Version 0.3.14 is starting up, running on Linux System
+[20.04.2014 14:43:46][AnnoTool][1] -> Using Qt rendering engine.
+[20.04.2014 14:43:46][AnnoTool][1] -> Loading IDL annotation datasets from [/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-3-14-gilroy-to-gilroy-f2/results_by_worker_4-3-14-gilroy-to-gilroy-f2/0010_A1PYMROZ75S4FW.al].
+[20.04.2014 14:43:46][AnnoTool][1] -> Loaded 10 IDL annotation datasets.
+[20.04.2014 14:43:46][AnnoTool][1] -> Loaded project '0010_A1PYMROZ75S4FW.al': 0 classes, 10 AnnotationFiles.
+[20.04.2014 14:43:56][AnnoTool][1] -> AnnoTool is shutting down.
+[20.04.2014 17:01:49][AnnoTool][1] -> AnnoTool Version 0.3.14 is starting up, running on Linux System
+[20.04.2014 17:01:49][AnnoTool][1] -> Using Qt rendering engine.
+[20.04.2014 17:01:50][AnnoTool][1] -> Loading IDL annotation datasets from [/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-3-14-gilroy-to-gilroy-f2/results_by_worker_4-3-14-gilroy-to-gilroy-f2/0107_A234WZ4KX8IW07.al].
+[20.04.2014 17:01:50][AnnoTool][1] -> Loaded 107 IDL annotation datasets.
+[20.04.2014 17:01:50][AnnoTool][1] -> Loaded project '0107_A234WZ4KX8IW07.al': 0 classes, 107 AnnotationFiles.
+[20.04.2014 17:02:30][AnnoTool][1] -> AnnoTool is shutting down.
+[20.04.2014 17:02:39][AnnoTool][1] -> AnnoTool Version 0.3.14 is starting up, running on Linux System
+[20.04.2014 17:02:40][AnnoTool][1] -> Using Qt rendering engine.
+[20.04.2014 17:02:40][AnnoTool][1] -> Loading IDL annotation datasets from [/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-3-14-gilroy-to-gilroy-f2/results_by_worker_4-3-14-gilroy-to-gilroy-f2/0080_A3FIWSZ4U54TKX.al].
+[20.04.2014 17:02:40][AnnoTool][1] -> Loaded 80 IDL annotation datasets.
+[20.04.2014 17:02:40][AnnoTool][1] -> Loaded project '0080_A3FIWSZ4U54TKX.al': 0 classes, 80 AnnotationFiles.
+[20.04.2014 17:02:55][AnnoTool][1] -> AnnoTool is shutting down.
+[20.04.2014 17:03:04][AnnoTool][1] -> AnnoTool Version 0.3.14 is starting up, running on Linux System
+[20.04.2014 17:03:04][AnnoTool][1] -> Using Qt rendering engine.
+[20.04.2014 17:03:04][AnnoTool][1] -> Loading IDL annotation datasets from [/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-3-14-gilroy-to-gilroy-f2/results_by_worker_4-3-14-gilroy-to-gilroy-f2/0071_APLQSM4J9E6LR.al].
+[20.04.2014 17:03:04][AnnoTool][1] -> Loaded 71 IDL annotation datasets.
+[20.04.2014 17:03:04][AnnoTool][1] -> Loaded project '0071_APLQSM4J9E6LR.al': 0 classes, 71 AnnotationFiles.
+[20.04.2014 17:03:23][AnnoTool][1] -> AnnoTool is shutting down.
+[20.04.2014 17:44:15][AnnoTool][1] -> AnnoTool Version 0.3.14 is starting up, running on Linux System
+[20.04.2014 17:44:15][AnnoTool][1] -> Using Qt rendering engine.
+[20.04.2014 17:44:15][AnnoTool][1] -> Loading IDL annotation datasets from [/local/IMAGES/driving_data_q50_data/all_extracted/4-3-14-gilroy-to-gilroy-f2.al].
+[20.04.2014 17:44:15][AnnoTool][1] -> Loaded 474 IDL annotation datasets.
+[20.04.2014 17:44:15][AnnoTool][1] -> Loaded project '4-3-14-gilroy-to-gilroy-f2.al': 0 classes, 474 AnnotationFiles.
+[20.04.2014 17:45:51][AnnoTool][1] -> AnnoTool is shutting down.
+[21.04.2014 09:36:13][AnnoTool][1] -> AnnoTool Version 0.3.14 is starting up, running on Linux System
+[21.04.2014 09:36:14][AnnoTool][1] -> Using Qt rendering engine.
+[21.04.2014 09:36:14][AnnoTool][1] -> Loading IDL annotation datasets from [/local/IMAGES/driving_data_q50_data/all_extracted/4-3-14-gilroy-to-gilroy-f2-edit.al].
+[21.04.2014 09:36:14][AnnoTool][1] -> Loaded 790 IDL annotation datasets.
+[21.04.2014 09:36:14][AnnoTool][1] -> Loaded project '4-3-14-gilroy-to-gilroy-f2-edit.al': 0 classes, 790 AnnotationFiles.
+[21.04.2014 09:36:30][AnnoTool][1] -> Exported 790 images and 5197 annotations to IDL.
+[21.04.2014 09:36:42][AnnoTool][3] -> DISCONNECT-ERROR: GlobalProjectManager::resetSelectedFile() - during anno dcon
+[21.04.2014 09:36:48][AnnoTool][1] -> AnnoTool is shutting down.
+[21.04.2014 09:36:51][AnnoTool][1] -> AnnoTool Version 0.3.14 is starting up, running on Linux System
+[21.04.2014 09:36:52][AnnoTool][1] -> Using Qt rendering engine.
+[21.04.2014 09:36:52][AnnoTool][1] -> Loading IDL annotation datasets from [/local/IMAGES/driving_data_q50_data/all_extracted/4-3-14-gilroy-to-gilroy-f2-edit.al].
+[21.04.2014 09:36:52][AnnoTool][1] -> Loaded 790 IDL annotation datasets.
+[21.04.2014 09:36:52][AnnoTool][1] -> Loaded project '4-3-14-gilroy-to-gilroy-f2-edit.al': 0 classes, 790 AnnotationFiles.
+[21.04.2014 09:37:14][AnnoTool][3] -> DISCONNECT-ERROR: GlobalProjectManager::resetSelectedFile() - during anno dcon
+[21.04.2014 09:38:01][AnnoTool][3] -> DISCONNECT-ERROR: GlobalProjectManager::resetSelectedFile() - during anno dcon
+[21.04.2014 09:38:16][AnnoTool][3] -> DISCONNECT-ERROR: GlobalProjectManager::resetSelectedFile() - during anno dcon
+[21.04.2014 09:38:26][AnnoTool][1] -> Exported 790 images and 5193 annotations to IDL.
+[21.04.2014 09:38:53][AnnoTool][3] -> DISCONNECT-ERROR: GlobalProjectManager::resetSelectedFile() - during anno dcon
+[21.04.2014 09:39:03][AnnoTool][3] -> DISCONNECT-ERROR: GlobalProjectManager::resetSelectedFile() - during anno dcon
+[21.04.2014 09:39:14][AnnoTool][3] -> DISCONNECT-ERROR: GlobalProjectManager::resetSelectedFile() - during anno dcon
+[21.04.2014 09:39:30][AnnoTool][3] -> DISCONNECT-ERROR: GlobalProjectManager::resetSelectedFile() - during anno dcon
+[21.04.2014 09:39:32][AnnoTool][1] -> Exported 790 images and 5189 annotations to IDL.
+[21.04.2014 09:39:43][AnnoTool][1] -> Exported 790 images and 5189 annotations to IDL.
+[21.04.2014 09:39:56][AnnoTool][1] -> Exported 790 images and 5189 annotations to IDL.
+[21.04.2014 09:39:56][AnnoTool][1] -> Exported 790 images and 5189 annotations to IDL.
+[21.04.2014 09:40:19][AnnoTool][1] -> Exported 790 images and 5190 annotations to IDL.
+[21.04.2014 09:40:37][AnnoTool][3] -> DISCONNECT-ERROR: GlobalProjectManager::resetSelectedFile() - during anno dcon
+[21.04.2014 09:40:54][AnnoTool][1] -> Exported 790 images and 5189 annotations to IDL.
+[21.04.2014 09:41:19][AnnoTool][3] -> DISCONNECT-ERROR: GlobalProjectManager::resetSelectedFile() - during anno dcon
+[21.04.2014 09:41:27][AnnoTool][1] -> Exported 790 images and 5188 annotations to IDL.
+[21.04.2014 09:41:38][AnnoTool][1] -> Exported 790 images and 5188 annotations to IDL.
+[21.04.2014 09:42:36][AnnoTool][1] -> Exported 790 images and 5188 annotations to IDL.
+[21.04.2014 09:42:59][AnnoTool][1] -> Exported 790 images and 5187 annotations to IDL.
+[21.04.2014 09:43:02][AnnoTool][3] -> DISCONNECT-ERROR: GlobalProjectManager::resetSelectedFile() - during anno dcon
+[21.04.2014 09:43:21][AnnoTool][1] -> Exported 790 images and 5187 annotations to IDL.
+[21.04.2014 09:44:13][AnnoTool][1] -> Exported 790 images and 5187 annotations to IDL.
+[21.04.2014 09:44:17][AnnoTool][1] -> AnnoTool is shutting down.

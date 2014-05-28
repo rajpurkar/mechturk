@@ -1,0 +1,10 @@
+/local/IMAGES/driving_data_q50_data/all_extracted/4-29-14-granada-split_0_from_granada_a2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-29-14-granada-split_0_from_granada_b2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-29-14-granada-split_0_from_granada_c2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-29-14-granada-split_0_from_granada_d2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-29-14-granada-split_0_to_granada_a2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-29-14-granada-split_0_to_granada_b2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-29-14-granada-split_0_to_granada_c2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-29-14-granada-split_0_to_granada_d2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-29-14-granada-split_0_to_granada_e2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-29-14-granada-split_0_to_granada_f2

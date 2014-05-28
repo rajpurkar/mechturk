@@ -1,0 +1,14 @@
+/local/IMAGES/driving_data_q50_data/all_extracted/4-11-14-sanrafael-split_0_sanrafael_a2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-11-14-sanrafael-split_0_sanrafael_b2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-11-14-sanrafael-split_0_sanrafael_c2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-11-14-sanrafael-split_0_sanrafael_d2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-11-14-sanrafael-split_0_sanrafael_e2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-11-14-sanrafael-split_0_sanrafael_f2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-11-14-sanrafael-split_0_sanrafael_g2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-11-14-sanrafael-split_0_sanrafael_h2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-11-14-sanrafael-split_0_sanrafael_i2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-11-14-sanrafael-split_0_sanrafael_j2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-11-14-sanrafael-split_0_sanrafael_k2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-11-14-sanrafael-split_0_sanrafael_l2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-11-14-sanrafael-split_0_sanrafael_m2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-11-14-sanrafael-split_0_sanrafael_n2

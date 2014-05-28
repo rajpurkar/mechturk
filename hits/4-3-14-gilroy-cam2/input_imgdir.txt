@@ -1,0 +1,13 @@
+/local/IMAGES/driving_data_sameep/all_extracted/4-3-14-gilroy-split_0_from_gilroy_a2
+/local/IMAGES/driving_data_sameep/all_extracted/4-3-14-gilroy-split_0_from_gilroy_b2
+/local/IMAGES/driving_data_sameep/all_extracted/4-3-14-gilroy-split_0_from_gilroy_c2
+/local/IMAGES/driving_data_sameep/all_extracted/4-3-14-gilroy-split_0_from_gilroy_d2
+/local/IMAGES/driving_data_sameep/all_extracted/4-3-14-gilroy-split_0_from_gilroy_e2
+/local/IMAGES/driving_data_sameep/all_extracted/4-3-14-gilroy-split_0_from_gilroy_f2
+/local/IMAGES/driving_data_sameep/all_extracted/4-3-14-gilroy-split_0_from_gilroy_g2
+/local/IMAGES/driving_data_sameep/all_extracted/4-3-14-gilroy-split_0_to_gilroy_a2
+/local/IMAGES/driving_data_sameep/all_extracted/4-3-14-gilroy-split_0_to_gilroy_b2
+/local/IMAGES/driving_data_sameep/all_extracted/4-3-14-gilroy-split_0_to_gilroy_c2
+/local/IMAGES/driving_data_sameep/all_extracted/4-3-14-gilroy-split_0_to_gilroy_d2
+/local/IMAGES/driving_data_sameep/all_extracted/4-3-14-gilroy-split_0_to_gilroy_e2
+/local/IMAGES/driving_data_sameep/all_extracted/4-3-14-gilroy-split_0_to_gilroy_f2

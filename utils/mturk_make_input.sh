@@ -9,6 +9,10 @@ source `dirname $0`/data_utils_init.sh
 HIT_DIR=$1
 HIT_NAME=`basename $HIT_DIR`
 
+if [ ! -d "${HIT_DIR}" ]; then 
+    mkdir -p $HIT_DIR
+fi
+
 if (( $# < 2 )); then
     IMG_DIR[1]="${IMG_DIR_BASE}/${HIT_NAME}";
 else

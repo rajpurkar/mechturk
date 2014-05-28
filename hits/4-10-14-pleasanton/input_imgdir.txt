@@ -1,0 +1,14 @@
+/local/IMAGES/driving_data_q50_data/all_extracted/4-10-14-pleasanton-split_0_101n_a2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-10-14-pleasanton-split_0_237_a2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-10-14-pleasanton-split_0_237_b2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-10-14-pleasanton-split_0_238_a2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-10-14-pleasanton-split_0_680s_a2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-10-14-pleasanton-split_0_680s_b2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-10-14-pleasanton-split_0_680s_c2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-10-14-pleasanton-split_0_880n_a2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-10-14-pleasanton-split_0_880n_b2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-10-14-pleasanton-split_0_880n_c2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-10-14-pleasanton-split_0_880s_a2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-10-14-pleasanton-split_0_tomilpitas_a2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-10-14-pleasanton-split_0_tomilpitas_b2
+/local/IMAGES/driving_data_q50_data/all_extracted/4-10-14-pleasanton-split_0_tomilpitas_c2

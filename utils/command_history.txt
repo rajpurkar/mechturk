@@ -1,3 +1,5 @@
+sed -i 's/\/home\/hossein\/all_extracted\///g' ./tmp.al
+
 ./mturk_make_input.sh ../hits/4-2-14-monterey  /local/IMAGES/driving_data_sameep/all_extracted/4-2-14-monterey-*1
 
 ./mturk_make_input.sh ../hits/8-15-tracy-gilroy/  `find /local/IMAGES/driving_data_twangcat/all_extracted -mindepth 1 -maxdepth 1 -name "8-15-tracy-*" -type l`

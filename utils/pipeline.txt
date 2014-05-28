@@ -9,22 +9,23 @@
 * edit path/parameters in "data_utils_init.sh"
 
 * extract data from videos
-  find /afs/cs.stanford.edu/u/andriluka/mount/scail_group_deeplearning/driving_data/q50_data/4-9-14-concord -maxdepth 1 -name "split_0*1.avi" | sort -n > 4-9-cam1.txt
-  extract_data.sh 4-9-cam1.txt
+
+  find /afs/cs.stanford.edu/u/andriluka/mount/scail_group_deeplearning/driving_data/q50_data/4-10-14-pleasanton -maxdepth 1 -name "split_0*2.avi" | sort -n > /local/IMAGES/driving_data_q50_data/4-10-cam2.txt
+  ./extract_data.sh /local/IMAGES/driving_data_q50_data/4-10-cam2.txt						
 
 * copy data to S3 (later migrate to mtserve)
 
-  ./copy_data_s3.sh `find /local/IMAGES/driving_data_sameep/all_extracted -mindepth 1 -maxdepth 1 -name "4-2-14-monterey-*2" -type l`
+  ./copy_data_s3.sh `find /local/IMAGES/driving_data_q50_data/all_extracted -mindepth 1 -maxdepth 1 -name "4-2-14-monterey-*2" -type l`
 
 * create HIT's directory
 
-  ./mturk_make_input.sh ../hits/4-2-14-monterey-cam2  /local/IMAGES/driving_data_sameep/all_extracted/4-2-14-monterey-*2
+  ./mturk_make_input.sh ../hits/4-2-14-monterey-cam2  /local/IMAGES/driving_data_q50_data/all_extracted/4-2-14-monterey-*2
 
   older commands: 
           ./mturk_make_input.sh ../hits/7-19-monterey `find /local/IMAGES/driving_data_twangcat/all_extracted -mindepth 1 -maxdepth 1 -name "7-19-monterey-*" -type l`
-  ./mturk_make_input.sh ../hits/7-25-bay `find /local/IMAGES/driving_data_twangcat/all_extracted -mindepth 1 -maxdepth 1 -name "north-*" -or -name "south-*" -type l`
+	  ./mturk_make_input.sh ../hits/7-25-bay `find /local/IMAGES/driving_data_twangcat/all_extracted -mindepth 1 -maxdepth 1 -name "north-*" -or -name "south-*" -type l`
 
-* submit: "run.sh <HITDIR>>
+* submit: "run.sh <HITDIR>
 
 
 

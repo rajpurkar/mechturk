@@ -1,5 +1,4 @@
 function worker_annolist = split_by_workerid(annolist, outdir)
-
   %annolist = loadannotations(annolist_filename);
 
   % ... 
@@ -8,7 +7,17 @@ function worker_annolist = split_by_workerid(annolist, outdir)
 
   for aidx = 1:length(annolist)
     for ridx = 1:length(annolist(aidx).annorect)
-      assert(isfield(annolist(aidx).annorect(ridx), 'workerid'));
+
+      % MA: in some cases workers label multiple rectangles per image, workerid is then assigned to the image
+      if (~isfield(annolist(aidx).annorect(ridx), 'workerid') || isempty(annolist(aidx).annorect(ridx).workerid)) && isfield(annolist(aidx), 'workerid')
+	annolist(aidx).annorect(ridx).workerid = annolist(aidx).workerid;
+      end
+
+      if (~isfield(annolist(aidx).annorect(ridx), 'hitid') || isempty(annolist(aidx).annorect(ridx).hitid)) && isfield(annolist(aidx), 'hitid')
+	annolist(aidx).annorect(ridx).hitid = annolist(aidx).hitid;
+      end
+
+      assert(isfield(annolist(aidx).annorect(ridx), 'workerid') && length(annolist(aidx).annorect(ridx).workerid) > 0);
 
       if worker_idx.isKey(annolist(aidx).annorect(ridx).workerid)
 	cur_worker_idx = worker_idx(annolist(aidx).annorect(ridx).workerid);
@@ -18,17 +27,21 @@ function worker_annolist = split_by_workerid(annolist, outdir)
 	worker_idx(annolist(aidx).annorect(ridx).workerid) = cur_worker_idx;
 
 	if isfield(annolist(1), 'imgnum')
-	  worker_annolist{cur_worker_idx} = struct('image', {}, 'annorect', {}, 'imgnum', {});
+	  assert(false);
+	  worker_annolist{cur_worker_idx} = struct('image', {}, 'annorect', {}, 'hitid', {}, 'imgnum', {});
 	else
-	  worker_annolist{cur_worker_idx} = struct('image', {}, 'annorect', {});
+	  worker_annolist{cur_worker_idx} = struct('image', {}, 'annorect', {}, 'hitid', {});
 	end
       end
 
       n = length(worker_annolist{cur_worker_idx});
 
       if n == 0 || strcmp(worker_annolist{cur_worker_idx}(n).image.name, annolist(aidx).image.name) ~= 1
-	a = annolist(aidx);
+	%a = annolist(aidx);
+	a.image.name = annolist(aidx).image.name;
 	a.annorect = annolist(aidx).annorect(ridx);
+	a.hitid = annolist(aidx).hitid;
+
 	worker_annolist{cur_worker_idx}(n+1) = a;		
       else
 	worker_annolist{cur_worker_idx}(n).annorect(end+1) = annolist(aidx).annorect(ridx);

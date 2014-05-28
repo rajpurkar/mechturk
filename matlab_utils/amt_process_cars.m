@@ -1,7 +1,8 @@
 function amt_process_cars(amt_results);
 
   %base_img_dir = '/local/IMAGES/driving_data_twangcat/all_extracted';
-  base_img_dir = '/local/IMAGES/driving_data_sameep/all_extracted';
+  %base_img_dir = '/local/IMAGES/driving_data_sameep/all_extracted';
+  base_img_dir = '/local/IMAGES/driving_data_q50_data/all_extracted';
 
   %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/7-16-sacramento/7-16-sacramento.results';
   %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/7-18-101/7-18-101.results';
@@ -14,15 +15,27 @@ function amt_process_cars(amt_results);
   %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-2-14-monterey/4-2-14-monterey.results';
   %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-3-14-monterey/4-3-14-monterey.results';
 
-  amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-3-14-gilroy-cam2/4-3-14-gilroy-cam2.results';
+  %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-3-14-gilroy-cam2/4-3-14-gilroy-cam2.results';
+  %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-3-14-gilroy/4-3-14-gilroy.results';
+  %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-2-14-monterey-cam2/4-2-14-monterey-cam2.results';
+  %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-9-14-concord-cam2/4-9-14-concord-cam2.results';
+  %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-10-14-pleasanton/4-10-14-pleasanton.results';
+  %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-11-14-sanrafael/4-11-14-sanrafael.results';
+
+  %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-3-14-gilroy-to-gilroy-f2/4-3-14-gilroy-to-gilroy-f2.results';
+
+  %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/5-1-14-monterey/5-1-14-monterey.results';
+  %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-30-14-280/4-30-14-280.results';
+  %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-29-14-granada/4-29-14-granada.results';
+  amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-20-14-280/4-20-14-280.results';
     
   % extract annotations from amt results table
   annolist_all_workers = amt_to_al(base_img_dir, amt_results);
 
   % optionally, save results for by worker, 
 
-  %[hit_dir, amt_name, ~] = splitpathext(amt_results);
-  %worker_annolist = split_by_workerid(annolist_all_workers, [hit_dir '/results_by_worker_' amt_name]);
+  [hit_dir, amt_name, ~] = splitpathext(amt_results);
+  worker_annolist = split_by_workerid(annolist_all_workers, [hit_dir '/results_by_worker_' amt_name]);
  
   amt_al_accept_all_gen(annolist_all_workers, amt_results);
 
