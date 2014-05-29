@@ -106,6 +106,12 @@ function BoxDrawer(container)
                 "height": (pos.height - 3)+ "px",
                 "border-color": this.color
             });
+	    
+	    // MA
+	    //var t = this.handle.children(".boundingboxtext_boxwidth");
+	    var t = this.handle.children(".boundingboxtext");
+            t.html("<strong>w: " + pos.width + "</strong>").show();
+	    
         }
     }
 
@@ -155,8 +161,17 @@ function BoxDrawer(container)
             this.starty = yc;
 
             this.drawing = true;
+	    /* MA - show width while drawing */
+            //this.handle = $('<div class="boundingbox"><div>');
+            //this.handle = $('<div class="boundingbox"><div class="boundingboxtext_boxwidth"></div></div>');
+            this.handle = $('<div class="boundingbox"><div class="boundingboxtext"></div></div>');
 
-            this.handle = $('<div class="boundingbox"><div>');
+            this.handle.children(".boundingboxtext").show().css({
+                "border-color": "white",
+                "color": "white",
+		"margin-top": -20,
+                });
+
             this.updatedrawing(xc, yc);
             this.container.append(this.handle);
 
@@ -708,6 +723,7 @@ function Track(player, color, position)
             this.handle.children(".boundingboxtext").hide().css({
                 "border-color": this.color,
                 //"color": this.color
+		//"margin-top": -20,
                 });
 
             this.handle.resizable({

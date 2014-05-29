@@ -62,7 +62,7 @@ function TrackObjectUI(button, container, videoframe, job, player, tracks)
         });
         
         this.currentobject.initialize(this.counter, track, this.tracks);
-        this.currentobject.stateclassify();
+        this.currentobject.stateclassify();	
     }
 
     this.stopnewobject = function()
@@ -87,8 +87,13 @@ function TrackObjectUI(button, container, videoframe, job, player, tracks)
         this.tracks.dim(false);
         this.currentobject.track.highlight(false);
 
-        this.button.button("option", "disabled", false);
+	// MA 
+	var num_objects = me.objects.length;
+	f = function() {me.objects[num_objects-1].updateboxtext();}
 
+	this.currentobject.track.onupdate.push(f);
+
+        this.button.button("option", "disabled", false);
         this.counter++;
     }
 
@@ -150,22 +155,26 @@ function TrackObjectUI(button, container, videoframe, job, player, tracks)
 	// MA
         //var html = "<p>In this video, please track all of these objects:</p>";
 
-	var num_hints = 4;
+	var num_hints = 1;
 	var hintidx = Math.floor(Math.random()*num_hints);
         var html = "<p align='center'>Keyboard shortcuts: <font color='blue'>'n'</font> - new vehicle, <font color='blue'>'t'</font> - toggle between partially and fully visible state, <font color='blue'>'d'</font> - delete vehicle.</p><br>";
 
 	if (hintidx == 0) {
-            html += "<p align='center'><font color='green'>Hint</font>: labeling boxes should tightly enclose the vehicle: <img width = '200px' src='label_cars_instructions/box_precise.png'/><img width = '200px' src='label_cars_instructions/box_loose.png'/></p>";
+	    html += "<p align='center'><font color='green'>Hint</font>: label all vehicles with annotation rectangle wider than <strong>30 pixels</strong>. Vehicle ID and width are shown at the top of each annotation:</p><p align='center'><img width = '200px' src='label_cars_instructions/label_small_30px_missing2.png'/></p><p align='center'><img width = '200px' src='label_cars_instructions/label_small_30px_correct2.png'/></p>";
 	}
 	else if (hintidx == 1) {
-	    html += "<p align='center'><font color='green'>Hint</font>: labeling box for the partially visible vehicle should include the whole vehicle, not just the visible part: <img width = '200px' src='label_cars_instructions/occluded_all.png'/><img width = '200px' src='label_cars_instructions/occluded_visible_only.png'/></p>";
+            html += "<p align='center'><font color='green'>Hint</font>: labeling boxes should tightly enclose the vehicle: <img width = '200px' src='label_cars_instructions/box_precise.png'/><img width = '200px' src='label_cars_instructions/box_loose.png'/></p>";
 	}
 	else if (hintidx == 2) {
-	    html += "<p align='center'><font color='green'>Hint</font>: you may skip barely visible vehicles at a distance, but you should label all other vehicles: <img width = '200px' src='label_cars_instructions/missed_none.png'/><img width = '200px' src='label_cars_instructions/missed_car.png'/></p>";
+	    html += "<p align='center'><font color='green'>Hint</font>: labeling box for the partially visible vehicle should include the whole vehicle, not just the visible part: <img width = '200px' src='label_cars_instructions/occluded_all.png'/><img width = '200px' src='label_cars_instructions/occluded_visible_only.png'/></p>";
 	}
 	else if (hintidx == 3) {
+	    html += "<p align='center'><font color='green'>Hint</font>: you may skip barely visible vehicles at a distance, but you should label all other vehicles: <img width = '200px' src='label_cars_instructions/missed_none.png'/><img width = '200px' src='label_cars_instructions/missed_car.png'/></p>";
+	}
+	else if (hintidx == 4) {
 	    html += "<p align='center'><font color='green'>Hint</font>: label all types of vehicles including motorcycles, buses and trucks: <img width = '200px' src='label_cars_instructions/type6.jpeg'/><img width = '200px' src='label_cars_instructions/type1.jpeg'/></p>";
 	}
+
 
         //html += "<p>In this image, please label all of these objects:</p>";
 
@@ -408,7 +417,8 @@ function TrackObject(job, player, container, color)
     {
 	// MA 
         //var str = "<strong>" + this.job.labels[this.label] + " " + (this.id + 1) + "</strong>";
-	var str = "<strong>" + (this.id + 1) + "</strong>";
+	pos = this.track.pollposition();
+	var str = "<strong>id: " + (this.id + 1) + "<br>w: " + pos.width + "</strong>";
 
         var count = 0;
         for (var i in this.job.attributes[this.track.label])
