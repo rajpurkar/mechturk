@@ -108,10 +108,8 @@ function BoxDrawer(container)
             });
 	    
 	    // MA
-	    //var t = this.handle.children(".boundingboxtext_boxwidth");
 	    var t = this.handle.children(".boundingboxtext");
-            t.html("<strong>w: " + pos.width + "</strong>").show();
-	    
+            t.html("<strong>w: " + Math.round(pos.width) + "</strong>").show();	    
         }
     }
 
