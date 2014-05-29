@@ -418,7 +418,8 @@ function TrackObject(job, player, container, color)
 	// MA 
         //var str = "<strong>" + this.job.labels[this.label] + " " + (this.id + 1) + "</strong>";
 	var pos = this.track.pollposition();
-	var str = "<strong>id: " + (this.id + 1) + "<br>w: " + Math.round(pos.width) + "</strong>";
+	//var str = "<strong>id: " + (this.id + 1) + "<br>w: " + Math.round(pos.width) + "</strong>";
+	var str = "<strong>w: " + Math.round(pos.width) + "</strong>";
 
         var count = 0;
         for (var i in this.job.attributes[this.track.label])

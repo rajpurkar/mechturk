@@ -21,8 +21,8 @@ IMG_DIR_BASE=$EXTRACT_DIR/all_extracted;
 
 # step to use when copying images to S3 and creating HITs
 #IMG_STEP=50;
-IMG_STEP=20;
-#IMG_STEP=1;
+#IMG_STEP=20;
+IMG_STEP=1;
 
 
 
