@@ -27,7 +27,8 @@ function amt_process_cars(amt_results);
   %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/5-1-14-monterey/5-1-14-monterey.results';
   %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-30-14-280/4-30-14-280.results';
   %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-29-14-granada/4-29-14-granada.results';
-  amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-20-14-280/4-20-14-280.results';
+  %amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-20-14-280/4-20-14-280.results';
+  amt_results = '/afs/cs.stanford.edu/u/andriluka/code/mechturk/hits/4-9-14-concord-split_0_280N_d2/4-9-14-concord-split_0_280N_d2.results';
     
   % extract annotations from amt results table
   annolist_all_workers = amt_to_al(base_img_dir, amt_results);
