@@ -8,6 +8,17 @@
 
 * edit path/parameters in "data_utils_init.sh"
 
+  current camera framerates: 
+
+  old data (before June): 50 hz
+
+  new data: narrow FOV cameras (cameras 1 and 2) are coming at 25 hz (so each split is 2.5 hz). The
+  wide FOV cameras (cameras 3, 4, 5, 6) are coming at 12.5 hz (so each split is 1.25 hz).
+  
+  so far we labled images every 4 seconds -> 10 frames step for narrow and 5 frames step for wide FOV 
+
+
+
 * extract data from videos
 
   find /afs/cs.stanford.edu/u/andriluka/mount/scail_group_deeplearning/driving_data/q50_data/4-10-14-pleasanton -maxdepth 1 -name "split_0*2.avi" | sort -n > /local/IMAGES/driving_data_q50_data/4-10-cam2.txt
@@ -45,19 +56,3 @@
 
 
 
-
-* edit path in "data_utils_init.sh"
-
-* extract data from videos
-  find /afs/cs.stanford.edu/u/andriluka/mount/scail_group_deeplearning/driving_data/q50_data/4-9-14-concord -maxdepth 1 -name "split_0*1.avi" | sort -n > 4-9-cam1.txt
-  extract_data.sh 4-9-cam1.txt
-
-* copy data to S3 (later migrate to mtserve)
-
-  ./copy_data_s3.sh `find /local/IMAGES/driving_data_sameep/all_extracted -mindepth 1 -maxdepth 1 -name "4-2-14-monterey-*2" -type l`
-
-* create HIT's directory
-
-  ./mturk_make_input.sh ../hits/4-2-14-monterey-cam2  /local/IMAGES/driving_data_sameep/all_extracted/4-2-14-monterey-*2
-
-* submit: "run.sh <HITDIR>>
