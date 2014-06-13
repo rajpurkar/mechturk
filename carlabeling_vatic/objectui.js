@@ -160,7 +160,7 @@ function TrackObjectUI(button, container, videoframe, job, player, tracks)
         var html = "<p align='center'>Keyboard shortcuts: <font color='blue'>'n'</font> - new vehicle, <font color='blue'>'t'</font> - toggle between partially and fully visible state, <font color='blue'>'d'</font> - delete vehicle.</p><br>";
 
 	if (hintidx == 0) {
-	    html += "<p align='center'><font color='green'>Hint</font>: label all vehicles with annotation rectangle wider than <strong>25 pixels</strong>. Vehicle ID and width are shown at the top of each annotation:</p><p align='center'><img width = '200px' src='label_cars_instructions/label_small_30px_missing2.png'/></p><p align='center'><img width = '200px' src='label_cars_instructions/label_small_30px_correct2.png'/></p>";
+	    html += "<p align='center'><font color='green'>Hint</font>: label all vehicles with annotation rectangle wider than <strong>25 pixels</strong>. Width is indicated at the top of each annotation:</p><p align='center'><img width = '200px' src='label_cars_instructions/label_small_30px_missing2.png'/></p><p align='center'><img width = '200px' src='label_cars_instructions/label_small_30px_correct2.png'/></p>";
 	}
 	else if (hintidx == 1) {
             html += "<p align='center'><font color='green'>Hint</font>: labeling boxes should tightly enclose the vehicle: <img width = '200px' src='label_cars_instructions/box_precise.png'/><img width = '200px' src='label_cars_instructions/box_loose.png'/></p>";
