@@ -39,6 +39,7 @@ assert(column_by_name.isKey(ANNOTATION_STR));
 %assert(column_by_name.isKey(COMMENT_STR));
 
 annolist = struct('image', {});
+annolist_empty = struct('image', {});
 
 num_anno = 0;
 num_both_inside = 0;
@@ -409,8 +410,24 @@ for aidx = 2:size(A, 1)
         
         
     else
-        num_empty_data = num_empty_data + 1;
-        hits_empty{end+1} = strtrim(A{aidx, column_by_name(ASSIGNMENTID_STR)});
+
+      % begin - car labeling specific 
+      if ~isempty(strfind(tokens{2}, '.jpeg'))
+	% fname will contain S3 url, convetion is that local path has the same
+	% top level dir and filename
+	[fpath1, fname1, fext1] = splitpathext(tokens{2});
+	[fpath2, fname2, fext2] = splitpathext(fpath1);
+	fname = [fname2 '/' fname1 '.' fext1];
+	
+	fprintf('fname: %s\n', fname);
+	hit_aidx = length(annolist_empty) + 1;
+	annolist_empty(hit_aidx).image.name = fname;
+      end
+      % end - car labeling specific 
+
+
+      num_empty_data = num_empty_data + 1;
+      hits_empty{end+1} = strtrim(A{aidx, column_by_name(ASSIGNMENTID_STR)});
     end
     
     
@@ -434,10 +451,16 @@ end
 
 [~, amt_name, ext] = splitpathext(amt_results);
 outname = [basedir '/' amt_name '.al'];
+outname_empty = [basedir '/' amt_name '_empty.al'];
 outname_mat = [basedir '/' amt_name '.mat'];
 
 fprintf('saving %s\n', outname);
 saveannotations(annolist, outname);
+
+if length(annolist_empty) > 0
+  fprintf('saving %s\n', outname_empty);
+  saveannotations(annolist_empty, outname_empty);
+end
 
 fprintf('saving %s\n', outname_mat);
 save(outname_mat, 'annolist');

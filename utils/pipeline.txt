@@ -11,6 +11,7 @@
 * extract data from videos
 
   find /afs/cs.stanford.edu/u/andriluka/mount/scail_group_deeplearning/driving_data/q50_data/4-10-14-pleasanton -maxdepth 1 -name "split_0*2.avi" | sort -n > /local/IMAGES/driving_data_q50_data/4-10-cam2.txt
+
   ./extract_data.sh /local/IMAGES/driving_data_q50_data/4-10-cam2.txt						
 
 * copy data to S3 (later migrate to mtserve)
@@ -20,15 +21,17 @@
 * create HIT's directory
 
   ./mturk_make_input.sh ../hits/4-2-14-monterey-cam2  /local/IMAGES/driving_data_q50_data/all_extracted/4-2-14-monterey-*2
+  copy "properties" and "question" files into hit directory
 
   older commands: 
           ./mturk_make_input.sh ../hits/7-19-monterey `find /local/IMAGES/driving_data_twangcat/all_extracted -mindepth 1 -maxdepth 1 -name "7-19-monterey-*" -type l`
 	  ./mturk_make_input.sh ../hits/7-25-bay `find /local/IMAGES/driving_data_twangcat/all_extracted -mindepth 1 -maxdepth 1 -name "north-*" -or -name "south-*" -type l`
 
 * submit: "run.sh <HITDIR>
+  	  when changing money souce accounts change "mturk.properties"
 
 
-
+* edit and run amt_process_cars.m 
 
 
 
